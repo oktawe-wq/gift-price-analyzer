@@ -429,7 +429,7 @@ export default function PriceTable({ category }: PriceTableProps) {
         Score = R×0.4 + N×0.35 + Pop×0.25 / log₂(ціна) ·
         Вигода = Score / (ціна/100) · більше = краща пропозиція ·
         товари не в наявності затемнені · натисніть заголовок колонки для сортування ·{' '}
-        <span className="text-slate-500">v1.2.0</span>
+        <span className="text-slate-500">v1.3.0</span>
       </p>
     </div>
   );

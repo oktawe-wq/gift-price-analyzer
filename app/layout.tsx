@@ -8,8 +8,12 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Gift Price Analyzer",
-  description: "Compare gift value by price, rating, and Value Index",
+  title: "Аналізатор подарунків — обери найвигідніший",
+  description: "Сервіс для розрахунку вигоди подарунків. Порівнюй ціни, бали та обирай найкращі пропозиції швидко й зручно.",
+  openGraph: {
+    title: "Аналізатор подарунків — обери найвигідніший",
+    description: "Сервіс для розрахунку вигоди подарунків. Порівнюй ціни, бали та обирай найкращі пропозиції швидко й зручно.",
+  },
 };
 
 export default function RootLayout({
