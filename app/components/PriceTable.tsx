@@ -179,7 +179,7 @@ export default function PriceTable({ category }: PriceTableProps) {
         onClick={() => toggleSort(col)}
         className={`
           sticky top-0 z-10 select-none cursor-pointer
-          px-2 py-1.5 text-[10px] font-bold tracking-widest uppercase
+          px-2 py-1.5 text-[10px] font-sans font-bold tracking-widest uppercase
           border-b border-slate-600
           hover:bg-slate-700 transition-colors
           ${active && highlight ? 'bg-indigo-900 text-indigo-200' :
@@ -282,7 +282,7 @@ export default function PriceTable({ category }: PriceTableProps) {
               {/* Rank — not sortable */}
               <th className="
                 sticky top-0 z-10 w-8 px-2 py-1.5 text-center text-[10px]
-                font-bold tracking-widest uppercase text-slate-500
+                font-sans font-bold tracking-widest uppercase text-slate-500
                 bg-slate-800 border-b border-slate-600 select-none
               ">
                 #
@@ -292,7 +292,7 @@ export default function PriceTable({ category }: PriceTableProps) {
               {/* Stock — not sortable */}
               <th className="
                 sticky top-0 z-10 px-2 py-1.5 text-center text-[10px]
-                font-bold tracking-widest uppercase text-slate-400
+                font-sans font-bold tracking-widest uppercase text-slate-400
                 bg-slate-800 border-b border-slate-600 select-none whitespace-nowrap
               ">
                 Наявність
