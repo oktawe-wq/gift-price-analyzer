@@ -234,22 +234,6 @@ export default function PriceTable({ category }: PriceTableProps) {
           )}
         </div>
 
-        {/* ── Sort by Best Value toggle ─────────────────────────── */}
-        <button
-          onClick={toggleBestValue}
-          className={`
-            inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-[12px] font-bold
-            border-2 transition-all duration-150 shadow-sm
-            ${bestValue
-              ? 'bg-indigo-600 border-indigo-500 text-white shadow-indigo-200 shadow-md scale-105'
-              : 'bg-white border-indigo-300 text-indigo-600 hover:bg-indigo-50 hover:border-indigo-500 hover:shadow-md'}
-          `}
-          aria-pressed={bestValue}
-        >
-          <Zap size={13} className={bestValue ? 'text-yellow-300' : 'text-indigo-400'} />
-          Сортувати за вигодою
-        </button>
-
         {/* Count */}
         <span className="text-slate-400 tabular-nums">
           {rows.length}<span className="text-slate-600">/{totalForCategory}</span>
@@ -273,14 +257,35 @@ export default function PriceTable({ category }: PriceTableProps) {
         </div>
       </div>
 
+      {/* ── Analytics ─────────────────────────────────────────────── */}
+      <div className="flex flex-col sm:flex-row sm:items-center gap-2 rounded-lg border border-indigo-200 bg-indigo-50 px-3 py-2.5 text-[11px]">
+        <p className="text-indigo-700 leading-snug flex-1">
+          Натисніть, щоб побачити подарунки з максимумом балів за мінімальну ціну. Це допоможе обрати найвигіднішу пропозицію.
+        </p>
+        <button
+          onClick={toggleBestValue}
+          className={`
+            shrink-0 inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-[12px] font-bold
+            border-2 transition-all duration-150 shadow-sm whitespace-nowrap
+            ${bestValue
+              ? 'bg-indigo-600 border-indigo-500 text-white shadow-indigo-200 shadow-md scale-105'
+              : 'bg-white border-indigo-300 text-indigo-600 hover:bg-indigo-50 hover:border-indigo-500 hover:shadow-md'}
+          `}
+          aria-pressed={bestValue}
+        >
+          <Zap size={13} className={bestValue ? 'text-yellow-300' : 'text-indigo-400'} />
+          Сортувати за вигодою
+        </button>
+      </div>
+
       {/* ── Table ─────────────────────────────────────────────────── */}
       <div
-        className="overflow-x-auto overflow-y-auto max-h-[85vh] rounded border border-slate-200 shadow-sm"
+        className="overflow-x-auto overflow-y-auto max-h-[80vh] rounded border border-slate-200 shadow-sm"
         style={{ WebkitOverflowScrolling: 'touch' }}
       >
         <table className="w-full border-collapse">
 
-          <thead className="sticky top-0 z-20 bg-slate-900">
+          <thead className="sticky top-0 z-30 bg-slate-900">
             <tr>
               {/* Rank — not sortable */}
               <th className="
@@ -424,7 +429,7 @@ export default function PriceTable({ category }: PriceTableProps) {
         Score = R×0.4 + N×0.35 + Pop×0.25 / log₂(ціна) ·
         Вигода = Score / (ціна/100) · більше = краща пропозиція ·
         товари не в наявності затемнені · натисніть заголовок колонки для сортування ·{' '}
-        <span className="text-slate-500">v1.1.0</span>
+        <span className="text-slate-500">v1.2.0</span>
       </p>
     </div>
   );
