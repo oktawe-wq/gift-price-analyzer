@@ -178,14 +178,14 @@ export default function PriceTable({ category }: PriceTableProps) {
       <th
         onClick={() => toggleSort(col)}
         className={`
-          sticky top-0 z-10 select-none cursor-pointer
+          select-none cursor-pointer
           px-2 py-1.5 text-[10px] font-sans font-bold tracking-widest uppercase
           border-b-2 border-slate-600
           hover:bg-slate-700 transition-colors
           ${active && highlight ? 'bg-indigo-900 text-indigo-200' :
             active              ? 'bg-slate-700  text-white' :
-            highlight           ? 'bg-slate-800  text-indigo-400' :
-                                  'bg-slate-800  text-slate-400'}
+            highlight           ? 'bg-slate-900  text-indigo-400' :
+                                  'bg-slate-900  text-slate-400'}
           text-${align} ${className}
         `}
       >
@@ -274,16 +274,19 @@ export default function PriceTable({ category }: PriceTableProps) {
       </div>
 
       {/* ── Table ─────────────────────────────────────────────────── */}
-      <div className="overflow-x-auto rounded border border-slate-200 shadow-sm">
+      <div
+        className="overflow-x-auto overflow-y-auto max-h-[85vh] rounded border border-slate-200 shadow-sm"
+        style={{ WebkitOverflowScrolling: 'touch' }}
+      >
         <table className="w-full border-collapse">
 
-          <thead className="bg-slate-800">
+          <thead className="sticky top-0 z-20 bg-slate-900">
             <tr>
               {/* Rank — not sortable */}
               <th className="
-                sticky top-0 z-10 w-8 px-2 py-1.5 text-center text-[10px]
+                w-8 px-2 py-1.5 text-center text-[10px]
                 font-sans font-bold tracking-widest uppercase text-slate-500
-                bg-slate-800 border-b-2 border-slate-600 select-none
+                bg-slate-900 border-b-2 border-slate-600 select-none
               ">
                 #
               </th>
@@ -291,9 +294,9 @@ export default function PriceTable({ category }: PriceTableProps) {
               <Th label="Категорія"  col="category" align="left"  className="min-w-[110px]" />
               {/* Stock — not sortable */}
               <th className="
-                sticky top-0 z-10 px-2 py-1.5 text-center text-[10px]
+                px-2 py-1.5 text-center text-[10px]
                 font-sans font-bold tracking-widest uppercase text-slate-400
-                bg-slate-800 border-b-2 border-slate-600 select-none whitespace-nowrap min-w-[75px]
+                bg-slate-900 border-b-2 border-slate-600 select-none whitespace-nowrap min-w-[75px]
               ">
                 Наявність
               </th>
@@ -420,7 +423,8 @@ export default function PriceTable({ category }: PriceTableProps) {
       <p className="text-[10px] text-slate-400 px-0.5">
         Score = R×0.4 + N×0.35 + Pop×0.25 / log₂(ціна) ·
         Вигода = Score / (ціна/100) · більше = краща пропозиція ·
-        товари не в наявності затемнені · натисніть заголовок колонки для сортування
+        товари не в наявності затемнені · натисніть заголовок колонки для сортування ·{' '}
+        <span className="text-slate-500">v1.1.0</span>
       </p>
     </div>
   );
