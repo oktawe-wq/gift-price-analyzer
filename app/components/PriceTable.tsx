@@ -23,7 +23,6 @@ interface GiftData {
   personalization: boolean;
   stock:           boolean;
   googleResults:   number;
-  url?:            string;
 }
 
 interface Row extends GiftData {
@@ -382,14 +381,7 @@ export default function PriceTable({ category }: { category: string }) {
 
                 {/* Name */}
                 <td className="px-2 py-1 font-medium text-slate-800 max-w-[220px]">
-                  <a
-                    href={g.url ?? `https://podaroktut.com.ua/search?q=${encodeURIComponent(g.name)}`}
-                    target="_blank" rel="noopener noreferrer"
-                    className="truncate block text-blue-600 underline hover:text-blue-800"
-                    title={g.name}
-                  >
-                    {g.name}
-                  </a>
+                  <span className="truncate block" title={g.name}>{g.name}</span>
                   {g.personalization && (
                     <span className="text-[9px] text-indigo-400 font-normal">✎ персоналізація</span>
                   )}
@@ -473,7 +465,7 @@ export default function PriceTable({ category }: { category: string }) {
         Популярність = log₁₀(Google) − 1 ·
         товари без наявності затемнені ·
         клік на заголовок = сортування ·{' '}
-        <span className="text-slate-500">v1.5.0</span>
+        <span className="text-slate-500">v1.5.1-paused</span>
       </p>
     </div>
   );

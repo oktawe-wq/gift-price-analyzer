@@ -37,9 +37,14 @@ export default function Home() {
           <span>sorted by Value Score · higher = better deal</span>
         </div>
 
+        {/* Pause badge */}
+        <span className="ml-auto text-[10px] px-2 py-0.5 rounded-full bg-amber-500/20 border border-amber-500/40 text-amber-300 whitespace-nowrap">
+          ⏸ Магазин тимчасово на паузі — тільки аналітика
+        </span>
+
         {/* Active category pill */}
         {category !== 'All' && (
-          <span className="ml-auto text-[11px] px-2 py-0.5 rounded-full bg-indigo-800 text-indigo-200">
+          <span className="text-[11px] px-2 py-0.5 rounded-full bg-indigo-800 text-indigo-200">
             {category}
           </span>
         )}

@@ -54,7 +54,6 @@ interface Product {
   personalization: boolean;
   stock:           boolean;
   googleResults:   number;
-  url:             string;
 }
 
 // ── Helpers ───────────────────────────────────────────────────────────────
@@ -152,9 +151,6 @@ function parsePage(html: string, category: string, startId: number): Product[] {
     const priceRaw  = card.find('[class*="price"]').first().text();
     const price     = parsePrice(priceRaw);
 
-    const href      = card.find('a').first().attr('href') ?? '';
-    const url       = href.startsWith('http') ? href : `${BASE_URL}${href}`;
-
     const starsRaw  = card.find('[class*="rating"], [class*="star"]').first().text();
     const stars     = parseStars(starsRaw);
 
@@ -180,7 +176,6 @@ function parsePage(html: string, category: string, startId: number): Product[] {
       personalization,
       stock:           !outOfStock,
       googleResults:   googleResultsFor(name),
-      url,
     });
   });
 

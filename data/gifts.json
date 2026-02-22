@@ -9,8 +9,7 @@
     "category": "Мини бары",
     "personalization": true,
     "stock": true,
-    "googleResults": 23400,
-    "url": "https://podaroktut.com.ua/mini-bary/1"
+    "googleResults": 23400
   },
   {
     "id": 2,
@@ -22,8 +21,7 @@
     "category": "Мини бары",
     "personalization": true,
     "stock": true,
-    "googleResults": 45200,
-    "url": "https://podaroktut.com.ua/mini-bary/2"
+    "googleResults": 45200
   },
   {
     "id": 3,
@@ -35,8 +33,7 @@
     "category": "Мини бары",
     "personalization": false,
     "stock": true,
-    "googleResults": 12800,
-    "url": "https://podaroktut.com.ua/mini-bary/3"
+    "googleResults": 12800
   },
   {
     "id": 4,
@@ -48,8 +45,7 @@
     "category": "Мини бары",
     "personalization": false,
     "stock": true,
-    "googleResults": 67500,
-    "url": "https://podaroktut.com.ua/mini-bary/4"
+    "googleResults": 67500
   },
   {
     "id": 5,
@@ -61,8 +57,7 @@
     "category": "Мини бары",
     "personalization": false,
     "stock": false,
-    "googleResults": 38900,
-    "url": "https://podaroktut.com.ua/mini-bary/5"
+    "googleResults": 38900
   },
   {
     "id": 6,
@@ -74,21 +69,19 @@
     "category": "Мини бары",
     "personalization": true,
     "stock": true,
-    "googleResults": 98100,
-    "url": "https://podaroktut.com.ua/mini-bary/6"
+    "googleResults": 98100
   },
   {
     "id": 7,
     "name": "Мини бар «Книга» дубова",
     "price": 2950,
-    "stars": 5.0,
+    "stars": 5,
     "reviews": 199,
     "daysSinceAdded": 3,
     "category": "Мини бары",
     "personalization": true,
     "stock": true,
-    "googleResults": 34600,
-    "url": "https://podaroktut.com.ua/mini-bary/7"
+    "googleResults": 34600
   },
   {
     "id": 8,
@@ -100,8 +93,7 @@
     "category": "Мини бары",
     "personalization": false,
     "stock": true,
-    "googleResults": 9200,
-    "url": "https://podaroktut.com.ua/mini-bary/8"
+    "googleResults": 9200
   },
   {
     "id": 9,
@@ -113,8 +105,7 @@
     "category": "Мини бары",
     "personalization": false,
     "stock": true,
-    "googleResults": 185000,
-    "url": "https://podaroktut.com.ua/mini-bary/9"
+    "googleResults": 185000
   },
   {
     "id": 10,
@@ -126,8 +117,7 @@
     "category": "Мини бары",
     "personalization": true,
     "stock": false,
-    "googleResults": 14300,
-    "url": "https://podaroktut.com.ua/mini-bary/10"
+    "googleResults": 14300
   },
   {
     "id": 11,
@@ -139,8 +129,7 @@
     "category": "Мини бары",
     "personalization": true,
     "stock": true,
-    "googleResults": 41700,
-    "url": "https://podaroktut.com.ua/mini-bary/11"
+    "googleResults": 41700
   },
   {
     "id": 12,
@@ -152,8 +141,7 @@
     "category": "Мини бары",
     "personalization": true,
     "stock": true,
-    "googleResults": 17800,
-    "url": "https://podaroktut.com.ua/mini-bary/12"
+    "googleResults": 17800
   },
   {
     "id": 13,
@@ -165,8 +153,7 @@
     "category": "Мини бары",
     "personalization": true,
     "stock": true,
-    "googleResults": 29400,
-    "url": "https://podaroktut.com.ua/mini-bary/13"
+    "googleResults": 29400
   },
   {
     "id": 14,
@@ -178,8 +165,7 @@
     "category": "Брелки",
     "personalization": false,
     "stock": true,
-    "googleResults": 31200,
-    "url": "https://podaroktut.com.ua/brelky/14"
+    "googleResults": 31200
   },
   {
     "id": 15,
@@ -191,8 +177,7 @@
     "category": "Брелки",
     "personalization": false,
     "stock": true,
-    "googleResults": 27800,
-    "url": "https://podaroktut.com.ua/brelky/15"
+    "googleResults": 27800
   },
   {
     "id": 16,
@@ -204,8 +189,7 @@
     "category": "Брелки",
     "personalization": true,
     "stock": true,
-    "googleResults": 124000,
-    "url": "https://podaroktut.com.ua/brelky/16"
+    "googleResults": 124000
   },
   {
     "id": 17,
@@ -217,21 +201,19 @@
     "category": "Брелки",
     "personalization": false,
     "stock": true,
-    "googleResults": 89400,
-    "url": "https://podaroktut.com.ua/brelky/17"
+    "googleResults": 89400
   },
   {
     "id": 18,
     "name": "Брелок Якір морський",
     "price": 145,
-    "stars": 4.0,
+    "stars": 4,
     "reviews": 28,
     "daysSinceAdded": 210,
     "category": "Брелки",
     "personalization": false,
     "stock": false,
-    "googleResults": 43600,
-    "url": "https://podaroktut.com.ua/brelky/18"
+    "googleResults": 43600
   },
   {
     "id": 19,
@@ -243,8 +225,7 @@
     "category": "Брелки",
     "personalization": false,
     "stock": true,
-    "googleResults": 35700,
-    "url": "https://podaroktut.com.ua/brelky/19"
+    "googleResults": 35700
   },
   {
     "id": 20,
@@ -256,8 +237,7 @@
     "category": "Брелки",
     "personalization": false,
     "stock": true,
-    "googleResults": 5670,
-    "url": "https://podaroktut.com.ua/brelky/20"
+    "googleResults": 5670
   },
   {
     "id": 21,
@@ -269,8 +249,7 @@
     "category": "Брелки",
     "personalization": false,
     "stock": true,
-    "googleResults": 52300,
-    "url": "https://podaroktut.com.ua/brelky/21"
+    "googleResults": 52300
   },
   {
     "id": 22,
@@ -282,8 +261,7 @@
     "category": "Брелки",
     "personalization": false,
     "stock": true,
-    "googleResults": 76500,
-    "url": "https://podaroktut.com.ua/brelky/22"
+    "googleResults": 76500
   },
   {
     "id": 23,
@@ -295,8 +273,7 @@
     "category": "Брелки",
     "personalization": false,
     "stock": true,
-    "googleResults": 19800,
-    "url": "https://podaroktut.com.ua/brelky/23"
+    "googleResults": 19800
   },
   {
     "id": 24,
@@ -308,8 +285,7 @@
     "category": "Брелки",
     "personalization": true,
     "stock": true,
-    "googleResults": 28400,
-    "url": "https://podaroktut.com.ua/brelky/24"
+    "googleResults": 28400
   },
   {
     "id": 25,
@@ -321,8 +297,7 @@
     "category": "Брелки",
     "personalization": false,
     "stock": false,
-    "googleResults": 63100,
-    "url": "https://podaroktut.com.ua/brelky/25"
+    "googleResults": 63100
   },
   {
     "id": 26,
@@ -334,8 +309,7 @@
     "category": "Брелки",
     "personalization": true,
     "stock": true,
-    "googleResults": 147000,
-    "url": "https://podaroktut.com.ua/brelky/26"
+    "googleResults": 147000
   },
   {
     "id": 27,
@@ -347,8 +321,7 @@
     "category": "Кубки",
     "personalization": true,
     "stock": true,
-    "googleResults": 43200,
-    "url": "https://podaroktut.com.ua/kubky/27"
+    "googleResults": 43200
   },
   {
     "id": 28,
@@ -360,8 +333,7 @@
     "category": "Кубки",
     "personalization": true,
     "stock": true,
-    "googleResults": 118000,
-    "url": "https://podaroktut.com.ua/kubky/28"
+    "googleResults": 118000
   },
   {
     "id": 29,
@@ -373,8 +345,7 @@
     "category": "Кубки",
     "personalization": true,
     "stock": true,
-    "googleResults": 132000,
-    "url": "https://podaroktut.com.ua/kubky/29"
+    "googleResults": 132000
   },
   {
     "id": 30,
@@ -386,8 +357,7 @@
     "category": "Кубки",
     "personalization": true,
     "stock": true,
-    "googleResults": 57300,
-    "url": "https://podaroktut.com.ua/kubky/30"
+    "googleResults": 57300
   },
   {
     "id": 31,
@@ -399,8 +369,7 @@
     "category": "Кубки",
     "personalization": true,
     "stock": true,
-    "googleResults": 72400,
-    "url": "https://podaroktut.com.ua/kubky/31"
+    "googleResults": 72400
   },
   {
     "id": 32,
@@ -412,8 +381,7 @@
     "category": "Кубки",
     "personalization": true,
     "stock": true,
-    "googleResults": 84600,
-    "url": "https://podaroktut.com.ua/kubky/32"
+    "googleResults": 84600
   },
   {
     "id": 33,
@@ -425,8 +393,7 @@
     "category": "Кубки",
     "personalization": true,
     "stock": false,
-    "googleResults": 61800,
-    "url": "https://podaroktut.com.ua/kubky/33"
+    "googleResults": 61800
   },
   {
     "id": 34,
@@ -438,8 +405,7 @@
     "category": "Кубки",
     "personalization": true,
     "stock": true,
-    "googleResults": 48900,
-    "url": "https://podaroktut.com.ua/kubky/34"
+    "googleResults": 48900
   },
   {
     "id": 35,
@@ -451,8 +417,7 @@
     "category": "Кубки",
     "personalization": false,
     "stock": true,
-    "googleResults": 21300,
-    "url": "https://podaroktut.com.ua/kubky/35"
+    "googleResults": 21300
   },
   {
     "id": 36,
@@ -464,8 +429,7 @@
     "category": "Кубки",
     "personalization": true,
     "stock": true,
-    "googleResults": 34700,
-    "url": "https://podaroktut.com.ua/kubky/36"
+    "googleResults": 34700
   },
   {
     "id": 37,
@@ -477,8 +441,7 @@
     "category": "Кубки",
     "personalization": true,
     "stock": true,
-    "googleResults": 38500,
-    "url": "https://podaroktut.com.ua/kubky/37"
+    "googleResults": 38500
   },
   {
     "id": 38,
@@ -490,8 +453,7 @@
     "category": "Кубки",
     "personalization": true,
     "stock": true,
-    "googleResults": 44200,
-    "url": "https://podaroktut.com.ua/kubky/38"
+    "googleResults": 44200
   },
   {
     "id": 39,
@@ -503,8 +465,7 @@
     "category": "Игры",
     "personalization": false,
     "stock": true,
-    "googleResults": 168000,
-    "url": "https://podaroktut.com.ua/igry/39"
+    "googleResults": 168000
   },
   {
     "id": 40,
@@ -516,8 +477,7 @@
     "category": "Игры",
     "personalization": false,
     "stock": true,
-    "googleResults": 243000,
-    "url": "https://podaroktut.com.ua/igry/40"
+    "googleResults": 243000
   },
   {
     "id": 41,
@@ -529,8 +489,7 @@
     "category": "Игры",
     "personalization": false,
     "stock": true,
-    "googleResults": 194000,
-    "url": "https://podaroktut.com.ua/igry/41"
+    "googleResults": 194000
   },
   {
     "id": 42,
@@ -542,8 +501,7 @@
     "category": "Игры",
     "personalization": false,
     "stock": true,
-    "googleResults": 412000,
-    "url": "https://podaroktut.com.ua/igry/42"
+    "googleResults": 412000
   },
   {
     "id": 43,
@@ -555,8 +513,7 @@
     "category": "Игры",
     "personalization": false,
     "stock": true,
-    "googleResults": 87300,
-    "url": "https://podaroktut.com.ua/igry/43"
+    "googleResults": 87300
   },
   {
     "id": 44,
@@ -568,8 +525,7 @@
     "category": "Игры",
     "personalization": false,
     "stock": true,
-    "googleResults": 63400,
-    "url": "https://podaroktut.com.ua/igry/44"
+    "googleResults": 63400
   },
   {
     "id": 45,
@@ -581,8 +537,7 @@
     "category": "Игры",
     "personalization": false,
     "stock": false,
-    "googleResults": 95200,
-    "url": "https://podaroktut.com.ua/igry/45"
+    "googleResults": 95200
   },
   {
     "id": 46,
@@ -594,8 +549,7 @@
     "category": "Игры",
     "personalization": false,
     "stock": true,
-    "googleResults": 51800,
-    "url": "https://podaroktut.com.ua/igry/46"
+    "googleResults": 51800
   },
   {
     "id": 47,
@@ -607,8 +561,7 @@
     "category": "Игры",
     "personalization": false,
     "stock": true,
-    "googleResults": 318000,
-    "url": "https://podaroktut.com.ua/igry/47"
+    "googleResults": 318000
   },
   {
     "id": 48,
@@ -620,8 +573,7 @@
     "category": "Игры",
     "personalization": false,
     "stock": true,
-    "googleResults": 476000,
-    "url": "https://podaroktut.com.ua/igry/48"
+    "googleResults": 476000
   },
   {
     "id": 49,
@@ -633,8 +585,7 @@
     "category": "Игры",
     "personalization": false,
     "stock": true,
-    "googleResults": 172000,
-    "url": "https://podaroktut.com.ua/igry/49"
+    "googleResults": 172000
   },
   {
     "id": 50,
@@ -646,7 +597,6 @@
     "category": "Игры",
     "personalization": false,
     "stock": true,
-    "googleResults": 84700,
-    "url": "https://podaroktut.com.ua/igry/50"
+    "googleResults": 84700
   }
 ]
