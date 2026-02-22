@@ -180,7 +180,7 @@ export default function PriceTable({ category }: PriceTableProps) {
         className={`
           sticky top-0 z-10 select-none cursor-pointer
           px-2 py-1.5 text-[10px] font-sans font-bold tracking-widest uppercase
-          border-b border-slate-600
+          border-b-2 border-slate-600
           hover:bg-slate-700 transition-colors
           ${active && highlight ? 'bg-indigo-900 text-indigo-200' :
             active              ? 'bg-slate-700  text-white' :
@@ -274,33 +274,33 @@ export default function PriceTable({ category }: PriceTableProps) {
       </div>
 
       {/* ── Table ─────────────────────────────────────────────────── */}
-      <div className="overflow-auto rounded border border-slate-200 shadow-sm">
+      <div className="overflow-x-auto rounded border border-slate-200 shadow-sm">
         <table className="w-full border-collapse">
 
-          <thead>
+          <thead className="bg-slate-800">
             <tr>
               {/* Rank — not sortable */}
               <th className="
                 sticky top-0 z-10 w-8 px-2 py-1.5 text-center text-[10px]
                 font-sans font-bold tracking-widest uppercase text-slate-500
-                bg-slate-800 border-b border-slate-600 select-none
+                bg-slate-800 border-b-2 border-slate-600 select-none
               ">
                 #
               </th>
               <Th label="Назва"      col="name"     align="left"  className="min-w-[200px]" />
-              <Th label="Категорія"  col="category" align="left"  />
+              <Th label="Категорія"  col="category" align="left"  className="min-w-[110px]" />
               {/* Stock — not sortable */}
               <th className="
                 sticky top-0 z-10 px-2 py-1.5 text-center text-[10px]
                 font-sans font-bold tracking-widest uppercase text-slate-400
-                bg-slate-800 border-b border-slate-600 select-none whitespace-nowrap
+                bg-slate-800 border-b-2 border-slate-600 select-none whitespace-nowrap min-w-[75px]
               ">
                 Наявність
               </th>
-              <Th label="Ціна"     col="price" align="right" />
-              <Th label="Рейтинг"  col="stars" align="right" />
-              <Th label="Бал"    subLabel="(Якість + Новизна)" col="score" align="right" />
-              <Th label="Вигода"  subLabel="(Бал / Ціна)"       col="value" align="right" highlight={bestValue} />
+              <Th label="Ціна"     col="price" align="right" className="min-w-[75px]" />
+              <Th label="Рейтинг"  col="stars" align="right" className="min-w-[95px]" />
+              <Th label="Бал"    subLabel="(Якість + Новизна)" col="score" align="right" className="min-w-[85px]" />
+              <Th label="Вигода"  subLabel="(Бал / Ціна)"       col="value" align="right" highlight={bestValue} className="min-w-[80px]" />
             </tr>
           </thead>
 
@@ -318,7 +318,7 @@ export default function PriceTable({ category }: PriceTableProps) {
                 <tr
                   key={g.id}
                   className={`
-                    transition-colors hover:bg-slate-50
+                    transition-colors group hover:bg-indigo-50/60
                     ${i % 2 === 0 ? 'bg-white' : 'bg-zinc-50/50'}
                     ${!g.stock ? 'opacity-40' : ''}
                   `}
@@ -363,7 +363,7 @@ export default function PriceTable({ category }: PriceTableProps) {
                   </td>
 
                   {/* Price */}
-                  <td className="px-2 py-1 text-right tabular-nums text-slate-700 whitespace-nowrap">
+                  <td className="px-2 py-1 text-right tabular-nums text-slate-700 whitespace-nowrap font-medium group-hover:text-slate-900">
                     ₴{g.price.toLocaleString('uk-UA')}
                   </td>
 
@@ -383,7 +383,7 @@ export default function PriceTable({ category }: PriceTableProps) {
                   </td>
 
                   {/* Value — highlighted column when toggle is on */}
-                  <td className={`px-2 py-1 text-right whitespace-nowrap ${bestValue ? 'bg-indigo-50/70' : ''}`}>
+                  <td className={`px-2 py-1 text-right whitespace-nowrap ${bestValue ? 'bg-indigo-50/70' : 'group-hover:bg-indigo-50/40'}`}>
                     <span className={`tabular-nums font-semibold ${valueColor(g.value)}`}>
                       {g.value.toFixed(4)}
                     </span>
