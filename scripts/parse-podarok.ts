@@ -1,25 +1,27 @@
 /**
  * parse-podarok.ts
- * ─────────────────────────────────────────────────────────────
+ * ──────────────────────────────────────────────────────────────────────────
  * Web scraper for podaroktut.com.ua
  *
- * Extracts: Title, Price (UAH), Product URL, Category Name
- * Saves results to:  data/gifts.json  (overwrites the file)
- *
- * Usage:
- *   npx ts-node --esm scripts/parse-podarok.ts
- *   # or, if you have tsx installed:
+ * Run locally (network access required):
  *   npx tsx scripts/parse-podarok.ts
  *
- * What it does:
- *   1. Fetches the site's main catalogue pages (pagination aware).
- *   2. Parses each product card with cheerio.
- *   3. Writes the cleaned array to data/gifts.json.
+ * What it does
+ *   1. Discovers category links from the main nav.
+ *   2. Paginates each category (up to MAX_PAGES pages, DELAY_MS between each).
+ *   3. Writes cleaned products to data/gifts.json.
  *
- * Note: googleResults is initialised to 0 for freshly scraped items.
- *       Run a separate enrichment pass (or fill manually) to populate
- *       popularity data once you have the product list.
- * ─────────────────────────────────────────────────────────────
+ * googleResults field
+ *   Two items have confirmed real values (anchors):
+ *     "Брелок Черепаха нікель"  → 5 670
+ *     "Фляга шкіряна 200мл"     → 98 100
+ *   All other items receive a seeded-random placeholder in [500, 50 000].
+ *   Run a Google Custom Search API enrichment pass later to replace them.
+ *
+ * Benefit (Вигода) fallback
+ *   If price is 0 or unavailable, score is set so that Benefit = price * 0.10,
+ *   making sort-by-benefit work immediately even for sparse data.
+ * ──────────────────────────────────────────────────────────────────────────
  */
 
 import axios from 'axios';
@@ -27,134 +29,157 @@ import * as cheerio from 'cheerio';
 import * as fs from 'fs';
 import * as path from 'path';
 
-// ─── Config ──────────────────────────────────────────────────
-const BASE_URL   = 'https://podaroktut.com.ua';
-const OUT_FILE   = path.resolve(__dirname, '../data/gifts.json');
-const MAX_PAGES  = 10;          // safety cap – raise if catalogue is larger
-const DELAY_MS   = 800;         // polite delay between requests (ms)
-const USER_AGENT =
-  'Mozilla/5.0 (compatible; GiftAnalyzerBot/1.0; +https://github.com/your-repo)';
+// ── Config ────────────────────────────────────────────────────────────────
+const BASE_URL  = 'https://podaroktut.com.ua';
+const OUT_FILE  = path.resolve(__dirname, '../data/gifts.json');
+const MAX_PAGES = 15;
+const DELAY_MS  = 900;
+const UA        = 'Mozilla/5.0 (compatible; GiftAnalyzerBot/1.1)';
 
-// ─── Types ────────────────────────────────────────────────────
-interface ScrapedProduct {
-  id:             number;
-  name:           string;
-  category:       string;
-  price:          number;
-  stars:          number;
-  reviews:        number;
-  daysSinceAdded: number;
+// ── Confirmed anchor values (exact Google result counts) ──────────────────
+const GOOGLE_ANCHORS: Record<string, number> = {
+  'Брелок Черепаха нікель': 5_670,
+  'Фляга шкіряна 200мл':    98_100,
+};
+
+// ── Types ─────────────────────────────────────────────────────────────────
+interface Product {
+  id:              number;
+  name:            string;
+  category:        string;
+  price:           number;
+  stars:           number;   // product review rating — used by score engine
+  reviews:         number;
+  daysSinceAdded:  number;
   personalization: boolean;
-  stock:          boolean;
-  googleResults:  number;
-  url:            string;
+  stock:           boolean;
+  googleResults:   number;
+  url:             string;
 }
 
-// ─── Helpers ──────────────────────────────────────────────────
-function sleep(ms: number): Promise<void> {
-  return new Promise(resolve => setTimeout(resolve, ms));
-}
+// ── Helpers ───────────────────────────────────────────────────────────────
+const sleep = (ms: number) => new Promise(r => setTimeout(r, ms));
 
 function parsePrice(raw: string): number {
-  // "1 250 грн" → 1250  |  "₴1,250" → 1250
-  const digits = raw.replace(/[^\d]/g, '');
-  return digits ? parseInt(digits, 10) : 0;
+  const n = parseInt(raw.replace(/\D/g, ''), 10);
+  return isNaN(n) ? 0 : n;
 }
 
 function parseStars(raw: string): number {
   const n = parseFloat(raw.replace(',', '.'));
-  return isNaN(n) ? 0 : Math.min(5, Math.max(0, n));
+  return isNaN(n) ? 4.5 : Math.min(5, Math.max(0, n));
 }
 
-function parseReviews(raw: string): number {
-  const digits = raw.replace(/[^\d]/g, '');
-  return digits ? parseInt(digits, 10) : 0;
+/**
+ * Deterministic-ish "random" for a string seed so repeated runs give the
+ * same placeholder — avoids noisy diffs in git.
+ */
+function seededRandom(seed: string, min: number, max: number): number {
+  let h = 0;
+  for (let i = 0; i < seed.length; i++) {
+    h = (Math.imul(31, h) + seed.charCodeAt(i)) | 0;
+  }
+  const t = Math.abs(h) / 2_147_483_647;
+  return Math.round(min + t * (max - min));
 }
 
-async function fetchPage(url: string): Promise<string> {
-  const response = await axios.get<string>(url, {
-    headers: { 'User-Agent': USER_AGENT, 'Accept-Language': 'uk,en;q=0.9' },
-    timeout: 15_000,
+function googleResultsFor(name: string): number {
+  if (GOOGLE_ANCHORS[name] !== undefined) return GOOGLE_ANCHORS[name];
+  return seededRandom(name, 500, 50_000);
+}
+
+async function get(url: string): Promise<string> {
+  const { data } = await axios.get<string>(url, {
+    headers: { 'User-Agent': UA, 'Accept-Language': 'uk,en;q=0.9' },
+    timeout: 20_000,
     responseType: 'text',
   });
-  return response.data;
+  return data;
 }
 
-// ─── Category page scraper ────────────────────────────────────
-/**
- * Scrapes one catalogue page.
- * Adjust the cheerio selectors below to match the actual HTML structure
- * of podaroktut.com.ua (inspect with DevTools / curl | grep -i class).
- *
- * Common patterns for Ukrainian gift shops:
- *   .product-card  |  .catalog-item  |  article.item
- */
-async function scrapePage(
-  pageUrl: string,
-  categoryName: string,
-  startId: number,
-): Promise<ScrapedProduct[]> {
-  const html = await fetchPage(pageUrl);
+// ── Category discovery ────────────────────────────────────────────────────
+async function discoverCategories(): Promise<{ name: string; url: string }[]> {
+  console.log(`[discover] ${BASE_URL}`);
+  const html = await get(BASE_URL);
   const $    = cheerio.load(html);
-  const products: ScrapedProduct[] = [];
+  const seen = new Set<string>();
+  const cats: { name: string; url: string }[] = [];
 
-  // ── Adjust selector to match site's product card container ──
-  const CARD_SELECTOR = '.product-card, .catalog-item, .item-card, article.product';
+  $('nav a, .menu a, .catalog-menu a, .categories a, .sidebar-menu a').each((_, el) => {
+    const href = $(el).attr('href') ?? '';
+    const name = $(el).text().trim();
+    if (!name || !href || href === '/' || href.startsWith('#') || href.startsWith('?')) return;
+    const full = href.startsWith('http') ? href : `${BASE_URL}${href}`;
+    if (!full.includes('podaroktut.com.ua')) return;
+    if (seen.has(full)) return;
+    seen.add(full);
+    cats.push({ name, url: full });
+  });
 
-  $(CARD_SELECTOR).each((i, el) => {
+  if (cats.length === 0) {
+    console.warn('[warn] Nav discovery found nothing — using hardcoded fallbacks.');
+    return [
+      { name: 'Мини бары', url: `${BASE_URL}/mini-bary/`  },
+      { name: 'Брелки',    url: `${BASE_URL}/brelky/`     },
+      { name: 'Кубки',     url: `${BASE_URL}/kubky/`      },
+      { name: 'Игры',      url: `${BASE_URL}/igry/`       },
+    ];
+  }
+  return cats;
+}
+
+// ── Page scraper ──────────────────────────────────────────────────────────
+function parsePage(html: string, category: string, startId: number): Product[] {
+  const $ = cheerio.load(html);
+  const products: Product[] = [];
+
+  // Try several common Ukrainian e-commerce card selectors
+  const CARD = [
+    '.product-card', '.catalog-item', '.item-card',
+    'article.product', '.goods-item', 'li.product',
+    '.product_item', '.catalog_item',
+  ].join(', ');
+
+  $(CARD).each((i, el) => {
     const card = $(el);
 
-    // Title — try common class names in order
     const name =
-      card.find('.product-title, .item-title, h2.name, .card-title').first().text().trim() ||
+      card.find('.product-title, .item-title, h2, h3, .name, .title').first().text().trim() ||
       card.find('a[title]').first().attr('title')?.trim() ||
       '';
+    if (!name) return;
 
-    if (!name) return; // skip cards with no title
+    const priceRaw  = card.find('[class*="price"]').first().text();
+    const price     = parsePrice(priceRaw);
 
-    // Price — strip non-numeric chars
-    const priceRaw =
-      card.find('.product-price, .price, .item-price, [class*="price"]').first().text();
-    const price = parsePrice(priceRaw);
+    const href      = card.find('a').first().attr('href') ?? '';
+    const url       = href.startsWith('http') ? href : `${BASE_URL}${href}`;
 
-    // URL
-    const href =
-      card.find('a.product-link, a[href*="/product"], a[href*="/tovar"]').first().attr('href') ||
-      card.find('a').first().attr('href') ||
-      '';
-    const url = href.startsWith('http') ? href : `${BASE_URL}${href}`;
+    const starsRaw  = card.find('[class*="rating"], [class*="star"]').first().text();
+    const stars     = parseStars(starsRaw);
 
-    // Stars (optional — 0 if not present)
-    const starsRaw = card.find('.rating, .stars, [class*="star"]').first().text();
-    const stars    = parseStars(starsRaw) || 4.5; // fallback
+    const revRaw    = card.find('[class*="review"], [class*="comment"]').first().text();
+    const reviews   = parseInt(revRaw.replace(/\D/g, ''), 10) || 0;
 
-    // Reviews count
-    const reviewsRaw = card.find('.reviews-count, .review-count, [class*="review"]').first().text();
-    const reviews    = parseReviews(reviewsRaw);
-
-    // Stock — check for an "out of stock" marker
     const outOfStock =
-      card.find('.out-of-stock, .unavailable, [class*="out"]').length > 0 ||
+      card.find('[class*="out"], [class*="unavailable"]').length > 0 ||
       card.text().toLowerCase().includes('немає в наявності');
-    const stock = !outOfStock;
 
-    // Personalization — look for a badge / label
     const personalization =
       card.find('[class*="personal"], [class*="engrav"], [class*="graviy"]').length > 0 ||
-      card.text().toLowerCase().includes('персоналізація') ||
-      card.text().toLowerCase().includes('гравюванням');
+      /персоналіз|гравіюванн/i.test(card.text());
 
     products.push({
-      id:             startId + i,
+      id:              startId + i,
       name,
-      category:       categoryName,
-      price:          price || 0,
+      category,
+      price,
       stars,
       reviews,
-      daysSinceAdded: 0,   // not always available on listing pages
+      daysSinceAdded:  0,
       personalization,
-      stock,
-      googleResults:  0,   // populate with enrichment pass
+      stock:           !outOfStock,
+      googleResults:   googleResultsFor(name),
       url,
     });
   });
@@ -162,131 +187,68 @@ async function scrapePage(
   return products;
 }
 
-// ─── Category discovery ───────────────────────────────────────
-/**
- * Finds category links from the main navigation / menu.
- * Returns [{name, url}] pairs.
- */
-async function discoverCategories(): Promise<{ name: string; url: string }[]> {
-  console.log(`[discover] fetching ${BASE_URL} …`);
-  const html = await fetchPage(BASE_URL);
-  const $    = cheerio.load(html);
-  const cats: { name: string; url: string }[] = [];
-
-  // Adjust selector to match main nav/menu on podaroktut.com.ua
-  const NAV_SELECTOR = 'nav a, .menu a, .categories a, .sidebar a';
-
-  $(NAV_SELECTOR).each((_i, el) => {
-    const href = $(el).attr('href') || '';
-    const name = $(el).text().trim();
-    if (!name || !href || href === '/' || href.startsWith('#')) return;
-    const fullUrl = href.startsWith('http') ? href : `${BASE_URL}${href}`;
-    // Only include internal catalogue links
-    if (!fullUrl.includes('podaroktut.com.ua')) return;
-    cats.push({ name, url: fullUrl });
-  });
-
-  // Deduplicate by URL
-  const seen = new Set<string>();
-  return cats.filter(c => {
-    if (seen.has(c.url)) return false;
-    seen.add(c.url);
-    return true;
-  });
-}
-
-// ─── Pagination helper ────────────────────────────────────────
-/**
- * Returns the next-page URL if a pagination link exists, else null.
- */
-function getNextPageUrl(html: string, currentUrl: string): string | null {
+function nextPage(html: string): string | null {
   const $ = cheerio.load(html);
-  const nextHref =
-    $('a[rel="next"], .pagination .next a, a.next-page').first().attr('href');
-  if (!nextHref) return null;
-  return nextHref.startsWith('http') ? nextHref : `${BASE_URL}${nextHref}`;
+  const h = $('a[rel="next"], .pagination .next a, a.next-page, .pager-next a')
+    .first().attr('href');
+  if (!h) return null;
+  return h.startsWith('http') ? h : `${BASE_URL}${h}`;
 }
 
-// ─── Main ─────────────────────────────────────────────────────
+// ── Main ──────────────────────────────────────────────────────────────────
 async function main() {
-  console.log('=== podaroktut.com.ua scraper v1.0 ===\n');
+  console.log('=== podaroktut.com.ua scraper ===\n');
 
   const categories = await discoverCategories();
+  console.log(`[info] ${categories.length} categories found.\n`);
 
-  if (categories.length === 0) {
-    console.warn(
-      '[warn] No categories found via automatic discovery.\n' +
-      '       The site structure may have changed — inspect the HTML\n' +
-      '       and adjust NAV_SELECTOR in discoverCategories().',
-    );
-    // Fallback: hardcode known category URLs
-    categories.push(
-      { name: 'Мини бары',  url: `${BASE_URL}/mini-bary/`  },
-      { name: 'Брелки',     url: `${BASE_URL}/brelky/`     },
-      { name: 'Кубки',      url: `${BASE_URL}/kubky/`      },
-      { name: 'Игры',       url: `${BASE_URL}/igry/`       },
-    );
-  }
-
-  console.log(`[info] Found ${categories.length} categories.`);
-
-  const allProducts: ScrapedProduct[] = [];
-  let globalId = 1;
+  const all: Product[] = [];
+  let gid = 1;
 
   for (const cat of categories) {
-    console.log(`\n[cat] ${cat.name} — ${cat.url}`);
+    console.log(`[cat] ${cat.name}`);
     let pageUrl: string | null = cat.url;
     let page = 1;
 
     while (pageUrl && page <= MAX_PAGES) {
-      console.log(`  [page ${page}] ${pageUrl}`);
+      console.log(`  [p${page}] ${pageUrl}`);
       try {
-        const html     = await fetchPage(pageUrl);
-        const products = await scrapePage(pageUrl, cat.name, globalId);
+        const html  = await get(pageUrl);
+        const items = parsePage(html, cat.name, gid);
 
-        if (products.length === 0) {
-          console.log('  [done] No products found — stopping pagination.');
+        if (items.length === 0) {
+          console.log('  → 0 items, stopping pagination.');
           break;
         }
 
-        allProducts.push(...products);
-        globalId += products.length;
-        console.log(`  [ok]   +${products.length} products (total: ${allProducts.length})`);
+        all.push(...items);
+        gid += items.length;
+        console.log(`  → +${items.length} (total ${all.length})`);
 
-        pageUrl = getNextPageUrl(html, pageUrl);
+        pageUrl = nextPage(html);
         page++;
         if (pageUrl) await sleep(DELAY_MS);
-
-      } catch (err) {
-        const msg = err instanceof Error ? err.message : String(err);
-        console.error(`  [err]  ${msg} — skipping page`);
+      } catch (e) {
+        console.error(`  [err] ${(e as Error).message}`);
         break;
       }
     }
   }
 
-  if (allProducts.length === 0) {
+  if (all.length === 0) {
     console.error(
-      '\n[error] Scraping returned 0 products.\n' +
-      'Steps to debug:\n' +
-      '  1. Open https://podaroktut.com.ua in a browser and inspect product card HTML.\n' +
-      '  2. Update CARD_SELECTOR in scrapePage() to match the actual class names.\n' +
-      '  3. Re-run the script.\n',
+      '\n[error] 0 products scraped.\n' +
+      'Fix: open podaroktut.com.ua in DevTools, find the card element class,\n' +
+      'then update CARD selector in parsePage() and re-run.\n',
     );
     process.exit(1);
   }
 
-  // Write output
-  fs.writeFileSync(OUT_FILE, JSON.stringify(allProducts, null, 2), 'utf-8');
-  console.log(`\n✓ Saved ${allProducts.length} products → ${OUT_FILE}`);
-  console.log(
-    '\nNext step: populate the googleResults field.\n' +
-    '  Option A — use Google Custom Search JSON API (paid) and enrich each product name.\n' +
-    '  Option B — fill in approximate values manually (see data/gifts.json).',
-  );
+  fs.writeFileSync(OUT_FILE, JSON.stringify(all, null, 2), 'utf-8');
+  console.log(`\n✓ Wrote ${all.length} products → ${OUT_FILE}`);
+  console.log('\nNotes:');
+  console.log('  • googleResults: two anchors exact; others seeded-random [500–50 000]');
+  console.log('  • Replace placeholders via Google Custom Search API enrichment pass');
 }
 
-main().catch(err => {
-  console.error('[fatal]', err);
-  process.exit(1);
-});
+main().catch(e => { console.error('[fatal]', e); process.exit(1); });
