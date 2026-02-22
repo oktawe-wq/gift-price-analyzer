@@ -7,6 +7,7 @@ import PriceTable from './components/PriceTable';
 import rawGifts from '../data/gifts.json';
 
 export default function Home() {
+  // entry point
   const [category, setCategory]       = useState('All');
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
