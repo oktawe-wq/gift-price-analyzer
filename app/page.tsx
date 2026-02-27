@@ -1,15 +1,28 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Menu, Gift, TrendingDown } from 'lucide-react';
 import Sidebar from './components/Sidebar';
 import PriceTable from './components/PriceTable';
 import rawGifts from '../data/gifts.json';
 
+const SESSION_KEY = 'gift_selected_category';
+
 export default function Home() {
-  // entry point
   const [category, setCategory]       = useState('All');
   const [sidebarOpen, setSidebarOpen] = useState(false);
+
+  // Restore the last selected category after hydration (survives remounts /
+  // router cache invalidation / tab focus refreshes).
+  useEffect(() => {
+    const saved = sessionStorage.getItem(SESSION_KEY);
+    if (saved && saved !== 'All') setCategory(saved);
+  }, []);
+
+  function handleSetCategory(cat: string) {
+    setCategory(cat);
+    sessionStorage.setItem(SESSION_KEY, cat);
+  }
 
   return (
     <div className="flex flex-col h-screen bg-slate-100 font-mono overflow-hidden">
@@ -28,13 +41,13 @@ export default function Home() {
         {/* Logo */}
         <div className="flex items-center gap-2">
           <Gift size={16} className="text-indigo-400" />
-          <span className="text-sm font-bold tracking-tight">Gift Price Analyzer</span>
+          <span className="text-[13px] font-bold tracking-tight">Аналізатор Подарунків</span>
         </div>
 
         {/* Tagline */}
-        <div className="hidden sm:flex items-center gap-1.5 ml-2 text-[11px] text-slate-500">
-          <TrendingDown size={11} />
-          <span>sorted by Value Score · higher = better deal</span>
+        <div className="hidden sm:flex items-center gap-1.5 ml-2 text-[13px] text-slate-500">
+          <TrendingDown size={13} />
+          <span>сортування за Вигодою · чим вище, тим краще</span>
         </div>
 
         {/* Pause badge */}
@@ -57,7 +70,7 @@ export default function Home() {
         <Sidebar
           gifts={rawGifts}
           selected={category}
-          onSelect={setCategory}
+          onSelect={handleSetCategory}
           open={sidebarOpen}
           onClose={() => setSidebarOpen(false)}
         />

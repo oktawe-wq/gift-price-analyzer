@@ -1,602 +1,2758 @@
 [
   {
     "id": 1,
-    "name": "Бочка керамічна 1л",
-    "price": 490,
-    "stars": 4.6,
-    "reviews": 87,
-    "daysSinceAdded": 42,
-    "category": "Мини бары",
-    "personalization": true,
-    "stock": true,
-    "googleResults": 23400
+    "title": "Картина \"Україна\" арт. 11",
+    "category": "Патріотичні",
+    "price_min": 3680,
+    "price_max": 3680,
+    "query": "Елітні подарунки",
+    "query_popularity": 1900000,
+    "item_popularity": 26600000,
+    "score": 6.5,
+    "tags": [
+      "type.premium"
+    ]
   },
   {
     "id": 2,
-    "name": "Бочка дубова 3л з краником",
-    "price": 1250,
-    "stars": 4.8,
-    "reviews": 134,
-    "daysSinceAdded": 18,
-    "category": "Мини бары",
-    "personalization": true,
-    "stock": true,
-    "googleResults": 45200
+    "title": "Подарок 18 в Україні",
+    "category": "Патріотичні",
+    "price_min": 799,
+    "price_max": 799,
+    "query": "Прикольні подарунки на 18 років",
+    "query_popularity": 249000,
+    "item_popularity": 21900000,
+    "score": 10,
+    "tags": [
+      "occasions.anniversary",
+      "type.funny"
+    ]
   },
   {
     "id": 3,
-    "name": "Штоф порцеляновий «Козак»",
-    "price": 680,
-    "stars": 4.3,
-    "reviews": 52,
-    "daysSinceAdded": 95,
-    "category": "Мини бары",
-    "personalization": false,
-    "stock": true,
-    "googleResults": 12800
+    "title": "Подарунок до 2000 в Україні",
+    "category": "Патріотичні",
+    "price_min": 4300,
+    "price_max": 4300,
+    "query": "Прикольні подарунки на 18 років",
+    "query_popularity": 249000,
+    "item_popularity": 15500000,
+    "score": 10,
+    "tags": [
+      "occasions.anniversary",
+      "type.funny"
+    ]
   },
   {
     "id": 4,
-    "name": "Набір для віскі «Шотландець»",
-    "price": 1890,
-    "stars": 4.9,
-    "reviews": 176,
-    "daysSinceAdded": 7,
-    "category": "Мини бары",
-    "personalization": false,
-    "stock": true,
-    "googleResults": 67500
+    "title": "Подарунок другу на 18 в Україні",
+    "category": "Патріотичні",
+    "price_min": 799,
+    "price_max": 799,
+    "query": "Прикольні подарунки на 18 років",
+    "query_popularity": 249000,
+    "item_popularity": 9260000,
+    "score": 10,
+    "tags": [
+      "occasions.anniversary",
+      "type.funny"
+    ]
   },
   {
     "id": 5,
-    "name": "Декантер кришталевий 750мл",
-    "price": 2200,
-    "stars": 4.7,
-    "reviews": 63,
-    "daysSinceAdded": 130,
-    "category": "Мини бары",
-    "personalization": false,
-    "stock": false,
-    "googleResults": 38900
+    "title": "Подарочный набор \"Лесной презент\"",
+    "category": "Подарункові набори",
+    "price_min": 1895,
+    "price_max": 1895,
+    "query": "Оригінальний подарунок дівчині на 20 років",
+    "query_popularity": 447000,
+    "item_popularity": 4130000,
+    "score": 4.4,
+    "tags": [
+      "recipients.women",
+      "occasions.anniversary",
+      "type.original",
+      "type.set"
+    ]
   },
   {
     "id": 6,
-    "name": "Фляга шкіряна 200мл",
-    "price": 420,
-    "stars": 4.1,
-    "reviews": 38,
-    "daysSinceAdded": 200,
-    "category": "Мини бары",
-    "personalization": true,
-    "stock": true,
-    "googleResults": 98100
+    "title": "Тарілка «Слава Україні»",
+    "category": "Патріотичні",
+    "price_min": 450,
+    "price_max": 450,
+    "query": "Подарунки для дорослих",
+    "query_popularity": 3790000,
+    "item_popularity": 2930000,
+    "score": 5.1,
+    "tags": [
+      "type.patriotic"
+    ]
   },
   {
     "id": 7,
-    "name": "Мини бар «Книга» дубова",
-    "price": 2950,
-    "stars": 5,
-    "reviews": 199,
-    "daysSinceAdded": 3,
-    "category": "Мини бары",
-    "personalization": true,
-    "stock": true,
-    "googleResults": 34600
+    "title": "Подарунок для чоловіка",
+    "category": "Чоловікам",
+    "price_min": 829,
+    "price_max": 829,
+    "query": "Купити подарунок на 18 років хлопцю",
+    "query_popularity": 30500,
+    "item_popularity": 2510000,
+    "score": 5.8,
+    "tags": [
+      "recipients.men",
+      "occasions.anniversary"
+    ]
   },
   {
     "id": 8,
-    "name": "Бочонок декоративний 0.5л",
-    "price": 310,
-    "stars": 3.9,
-    "reviews": 21,
-    "daysSinceAdded": 280,
-    "category": "Мини бары",
-    "personalization": false,
-    "stock": true,
-    "googleResults": 9200
+    "title": "Подарочный набор с термосом и чашками",
+    "category": "Подарункові набори",
+    "price_min": 1409,
+    "price_max": 1409,
+    "query": "Брендовые подарки",
+    "query_popularity": 99400000,
+    "item_popularity": 1980000,
+    "score": 5.1,
+    "tags": [
+      "type.premium",
+      "type.set",
+      "special.branded"
+    ]
   },
   {
     "id": 9,
-    "name": "Набір бокалів для вина (6 шт.)",
-    "price": 760,
-    "stars": 4.5,
-    "reviews": 109,
-    "daysSinceAdded": 55,
-    "category": "Мини бары",
-    "personalization": false,
-    "stock": true,
-    "googleResults": 185000
+    "title": "Келих 0,5 л",
+    "category": "Жінкам",
+    "price_min": 495,
+    "price_max": 495,
+    "query": "Патріотичні подарунки для іноземців",
+    "query_popularity": 2500,
+    "item_popularity": 635000,
+    "score": 10,
+    "tags": [
+      "recipients.special",
+      "type.patriotic"
+    ]
   },
   {
     "id": 10,
-    "name": "Графин «Глек» керамічний 1.5л",
-    "price": 545,
-    "stars": 4.2,
-    "reviews": 44,
-    "daysSinceAdded": 165,
-    "category": "Мини бары",
-    "personalization": true,
-    "stock": false,
-    "googleResults": 14300
+    "title": "Набір аксесуарів зі шкіри \"Париж",
+    "category": "Подарункові набори",
+    "price_min": 2040,
+    "price_max": 2040,
+    "query": "Елітні подарунки для жінок",
+    "query_popularity": 47700,
+    "item_popularity": 472000,
+    "score": 10,
+    "tags": [
+      "type.premium",
+      "type.set"
+    ]
   },
   {
     "id": 11,
-    "name": "Набір для коньяку в скрині",
-    "price": 1650,
-    "stars": 4.7,
-    "reviews": 88,
-    "daysSinceAdded": 30,
-    "category": "Мини бары",
-    "personalization": true,
-    "stock": true,
-    "googleResults": 41700
+    "title": "ЧАШКА УКРАЇНСЬКИЙ ОРНАМЕНТ",
+    "category": "Патріотичні",
+    "price_min": 495,
+    "price_max": 495,
+    "query": "Патріотичні подарунки для жінок",
+    "query_popularity": 59300,
+    "item_popularity": 468000,
+    "score": 6.5,
+    "tags": [
+      "type.patriotic"
+    ]
   },
   {
     "id": 12,
-    "name": "Чарки мисливські срібні (6 шт.)",
-    "price": 3000,
-    "stars": 4.8,
-    "reviews": 57,
-    "daysSinceAdded": 90,
-    "category": "Мини бары",
-    "personalization": true,
-    "stock": true,
-    "googleResults": 17800
+    "title": "Мужской подарочный набор с зонтом и термосом с датчиком температуры",
+    "category": "Подарункові набори",
+    "price_min": 2415,
+    "price_max": 2415,
+    "query": "Сувениры для мужчин",
+    "query_popularity": 2490000,
+    "item_popularity": 404000,
+    "score": 2.3,
+    "tags": [
+      "recipients.men",
+      "type.set"
+    ]
   },
   {
     "id": 13,
-    "name": "Бочка дубова 5л з гравіюванням",
-    "price": 1980,
-    "stars": 4.6,
-    "reviews": 72,
-    "daysSinceAdded": 22,
-    "category": "Мини бары",
-    "personalization": true,
-    "stock": true,
-    "googleResults": 29400
+    "title": "Пакет подарунковий",
+    "category": "Патріотичні",
+    "price_min": 95,
+    "price_max": 95,
+    "query": "Патріотичні подарунки для іноземців",
+    "query_popularity": 2500,
+    "item_popularity": 385000,
+    "score": 10,
+    "tags": [
+      "recipients.special",
+      "type.patriotic"
+    ]
   },
   {
     "id": 14,
-    "name": "Брелок Кінь",
-    "price": 120,
-    "stars": 4.4,
-    "reviews": 63,
-    "daysSinceAdded": 75,
-    "category": "Брелки",
-    "personalization": false,
-    "stock": true,
-    "googleResults": 31200
+    "title": "Кружка Лего конструктор (синя)",
+    "category": "Іграшки",
+    "price_min": 469,
+    "price_max": 469,
+    "query": "Подарунок на 20 років сину",
+    "query_popularity": 374000,
+    "item_popularity": 348000,
+    "score": 8.6,
+    "tags": [
+      "occasions.anniversary"
+    ]
   },
   {
     "id": 15,
-    "name": "Брелок Підкова бронзова",
-    "price": 95,
-    "stars": 4.2,
-    "reviews": 41,
-    "daysSinceAdded": 140,
-    "category": "Брелки",
-    "personalization": false,
-    "stock": true,
-    "googleResults": 27800
+    "title": "ПРАПОР УКРАЇНИ 90 Х 60 СМ",
+    "category": "Патріотичні",
+    "price_min": 9500,
+    "price_max": 9500,
+    "query": "Подарунки з українською символікою",
+    "query_popularity": 125000,
+    "item_popularity": 227000,
+    "score": 7.2,
+    "tags": [
+      "type.patriotic"
+    ]
   },
   {
     "id": 16,
-    "name": "Брелок з іменем лазерне гравіювання",
-    "price": 180,
-    "stars": 4.8,
-    "reviews": 152,
-    "daysSinceAdded": 12,
-    "category": "Брелки",
-    "personalization": true,
-    "stock": true,
-    "googleResults": 124000
+    "title": "Маска для сну \"Українські лани\"",
+    "category": "Патріотичні",
+    "price_min": 358,
+    "price_max": 358,
+    "query": "Патріотичні подарунки",
+    "query_popularity": 730000,
+    "item_popularity": 218000,
+    "score": 3.7,
+    "tags": [
+      "type.patriotic"
+    ]
   },
   {
     "id": 17,
-    "name": "Брелок Кіт срібний",
-    "price": 110,
-    "stars": 4.5,
-    "reviews": 79,
-    "daysSinceAdded": 60,
-    "category": "Брелки",
-    "personalization": false,
-    "stock": true,
-    "googleResults": 89400
+    "title": "Набір листівок «Ти — топ» 10 шт",
+    "category": "Подарункові набори",
+    "price_min": 249,
+    "price_max": 249,
+    "query": "Подарунки для дорослих",
+    "query_popularity": 3790000,
+    "item_popularity": 215000,
+    "score": 8.6,
+    "tags": [
+      "type.set"
+    ]
   },
   {
     "id": 18,
-    "name": "Брелок Якір морський",
-    "price": 145,
-    "stars": 4,
-    "reviews": 28,
-    "daysSinceAdded": 210,
-    "category": "Брелки",
-    "personalization": false,
-    "stock": false,
-    "googleResults": 43600
+    "title": "Антистресс боксерская настольная груша",
+    "category": "Подарункові набори",
+    "price_min": 1386,
+    "price_max": 1386,
+    "query": "Брендовые подарки",
+    "query_popularity": 99400000,
+    "item_popularity": 211000,
+    "score": 5.1,
+    "tags": [
+      "type.premium",
+      "special.branded"
+    ]
   },
   {
     "id": 19,
-    "name": "Брелок Орел геральдичний",
-    "price": 200,
-    "stars": 4.6,
-    "reviews": 95,
-    "daysSinceAdded": 33,
-    "category": "Брелки",
-    "personalization": false,
-    "stock": true,
-    "googleResults": 35700
+    "title": "Подарунок дружині на 30 в Україні",
+    "category": "Патріотичні",
+    "price_min": 1095,
+    "price_max": 1095,
+    "query": "Що подарувати на 30 років жінці",
+    "query_popularity": 916000,
+    "item_popularity": 205000,
+    "score": 5.1,
+    "tags": [
+      "recipients.women",
+      "occasions.anniversary"
+    ]
   },
   {
     "id": 20,
-    "name": "Брелок Черепаха нікель",
-    "price": 85,
-    "stars": 3.8,
-    "reviews": 17,
-    "daysSinceAdded": 310,
-    "category": "Брелки",
-    "personalization": false,
-    "stock": true,
-    "googleResults": 5670
+    "title": "Подарочный сургучный набор с печатью",
+    "category": "Подарункові набори",
+    "price_min": 1191,
+    "price_max": 1191,
+    "query": "Брендовые подарки",
+    "query_popularity": 99400000,
+    "item_popularity": 172000,
+    "score": 5.1,
+    "tags": [
+      "type.premium",
+      "type.set",
+      "special.branded"
+    ]
   },
   {
     "id": 21,
-    "name": "Брелок Гітара мідна",
-    "price": 130,
-    "stars": 4.3,
-    "reviews": 54,
-    "daysSinceAdded": 85,
-    "category": "Брелки",
-    "personalization": false,
-    "stock": true,
-    "googleResults": 52300
+    "title": "Подарунок подрузі в Україні",
+    "category": "Патріотичні",
+    "price_min": 799,
+    "price_max": 799,
+    "query": "Оригінальний подарунок на 18 років",
+    "query_popularity": 1150000,
+    "item_popularity": 168000,
+    "score": 8.6,
+    "tags": [
+      "recipients.women",
+      "occasions.anniversary",
+      "type.original"
+    ]
   },
   {
     "id": 22,
-    "name": "Брелок «Знак зодіаку» Овен",
-    "price": 99,
-    "stars": 4.1,
-    "reviews": 36,
-    "daysSinceAdded": 195,
-    "category": "Брелки",
-    "personalization": false,
-    "stock": true,
-    "googleResults": 76500
+    "title": "ПОДАРУНКОВИЙ НАБІР З 4-Х ПРО КОХАННЯ",
+    "category": "Подарункові набори",
+    "price_min": 975,
+    "price_max": 975,
+    "query": "Подарунковий набір",
+    "query_popularity": 1330000,
+    "item_popularity": 153000,
+    "score": 7.9,
+    "tags": [
+      "type.set"
+    ]
   },
   {
     "id": 23,
-    "name": "Брелок Риболовля (гачок + поплавок)",
-    "price": 115,
-    "stars": 4.4,
-    "reviews": 47,
-    "daysSinceAdded": 70,
-    "category": "Брелки",
-    "personalization": false,
-    "stock": true,
-    "googleResults": 19800
+    "title": "Фартух прикольний \"Українка\"",
+    "category": "Патріотичні",
+    "price_min": 289,
+    "price_max": 289,
+    "query": "Подарунки для дорослих",
+    "query_popularity": 3790000,
+    "item_popularity": 141000,
+    "score": 10,
+    "tags": [
+      "type.funny"
+    ]
   },
   {
     "id": 24,
-    "name": "Брелок Кулак «Удача»",
-    "price": 160,
-    "stars": 4.7,
-    "reviews": 123,
-    "daysSinceAdded": 8,
-    "category": "Брелки",
-    "personalization": true,
-    "stock": true,
-    "googleResults": 28400
+    "title": "Кулон підвіска карта України",
+    "category": "Патріотичні",
+    "price_min": 3000,
+    "price_max": 3000,
+    "query": "Подарунки з українською символікою",
+    "query_popularity": 125000,
+    "item_popularity": 136000,
+    "score": 7.9,
+    "tags": [
+      "type.patriotic"
+    ]
   },
   {
     "id": 25,
-    "name": "Брелок Собака Хаскі",
-    "price": 125,
-    "stars": 4.5,
-    "reviews": 68,
-    "daysSinceAdded": 50,
-    "category": "Брелки",
-    "personalization": false,
-    "stock": false,
-    "googleResults": 63100
+    "title": "Подарочный набор «Веселая аптечка»",
+    "category": "Подарункові набори",
+    "price_min": 995,
+    "price_max": 995,
+    "query": "Сувениры для мужчин",
+    "query_popularity": 2490000,
+    "item_popularity": 135000,
+    "score": 7.9,
+    "tags": [
+      "recipients.men",
+      "type.set"
+    ]
   },
   {
     "id": 26,
-    "name": "Брелок Серце з фото",
-    "price": 220,
-    "stars": 4.9,
-    "reviews": 187,
-    "daysSinceAdded": 5,
-    "category": "Брелки",
-    "personalization": true,
-    "stock": true,
-    "googleResults": 147000
+    "title": "НАБІР З 3-Х ЗНАЧКІВ «ШЛЯХ»",
+    "category": "Подарункові набори",
+    "price_min": 750,
+    "price_max": 750,
+    "query": "Патріотичні подарунки для жінок",
+    "query_popularity": 59300,
+    "item_popularity": 132000,
+    "score": 6.5,
+    "tags": [
+      "type.set",
+      "type.patriotic"
+    ]
   },
   {
     "id": 27,
-    "name": "Кубок Like",
-    "price": 350,
-    "stars": 4.5,
-    "reviews": 96,
-    "daysSinceAdded": 48,
-    "category": "Кубки",
-    "personalization": true,
-    "stock": true,
-    "googleResults": 43200
+    "title": "ПОДАРУНКОВИЙ НАБІР З 3-Х КВІТИ І ТРАВИ",
+    "category": "Подарункові набори",
+    "price_min": 1140,
+    "price_max": 1140,
+    "query": "Подарунковий набір",
+    "query_popularity": 1330000,
+    "item_popularity": 121000,
+    "score": 7.9,
+    "tags": [
+      "type.set"
+    ]
   },
   {
     "id": 28,
-    "name": "Кубок «Найкращий тато»",
-    "price": 295,
-    "stars": 4.7,
-    "reviews": 142,
-    "daysSinceAdded": 20,
-    "category": "Кубки",
-    "personalization": true,
-    "stock": true,
-    "googleResults": 118000
+    "title": "Подарунковий набір \"Love is\" для неї",
+    "category": "Подарункові набори",
+    "price_min": 1050,
+    "price_max": 1050,
+    "query": "Подарунки для дівчат",
+    "query_popularity": 1300000,
+    "item_popularity": 103000,
+    "score": 10,
+    "tags": [
+      "type.set"
+    ]
   },
   {
     "id": 29,
-    "name": "Кубок «Найкраща мама»",
-    "price": 295,
-    "stars": 4.8,
-    "reviews": 161,
-    "daysSinceAdded": 14,
-    "category": "Кубки",
-    "personalization": true,
-    "stock": true,
-    "googleResults": 132000
+    "title": "Подарунок в українському стилі №145",
+    "category": "Патріотичні",
+    "price_min": 79300,
+    "price_max": 79300,
+    "query": "Патріотичні подарунки для чоловіків",
+    "query_popularity": 76500,
+    "item_popularity": 103000,
+    "score": 5.8,
+    "tags": [
+      "recipients.men",
+      "type.patriotic"
+    ]
   },
   {
     "id": 30,
-    "name": "Кубок «Переможець» золотий",
-    "price": 580,
-    "stars": 4.6,
-    "reviews": 74,
-    "daysSinceAdded": 62,
-    "category": "Кубки",
-    "personalization": true,
-    "stock": true,
-    "googleResults": 57300
+    "title": "ПОДАРУНКОВИЙ НАБІР З 4-Х MY LOVE",
+    "category": "Подарункові набори",
+    "price_min": 1625,
+    "price_max": 1625,
+    "query": "Подарунковий набір",
+    "query_popularity": 1330000,
+    "item_popularity": 102000,
+    "score": 7.9,
+    "tags": [
+      "type.set"
+    ]
   },
   {
     "id": 31,
-    "name": "Кубок «Найкращий друг»",
-    "price": 270,
-    "stars": 4.4,
-    "reviews": 58,
-    "daysSinceAdded": 105,
-    "category": "Кубки",
-    "personalization": true,
-    "stock": true,
-    "googleResults": 72400
+    "title": "Набор чашка и тарелка «Ща только возьму разгон»",
+    "category": "Подарункові набори",
+    "price_min": 370,
+    "price_max": 370,
+    "query": "Прикольні подарунки на 18 років",
+    "query_popularity": 249000,
+    "item_popularity": 101000,
+    "score": 9.3,
+    "tags": [
+      "occasions.anniversary",
+      "type.funny",
+      "type.set"
+    ]
   },
   {
     "id": 32,
-    "name": "Кубок «Чемпіон» кришталевий",
-    "price": 750,
-    "stars": 4.9,
-    "reviews": 192,
-    "daysSinceAdded": 2,
-    "category": "Кубки",
-    "personalization": true,
-    "stock": true,
-    "googleResults": 84600
+    "title": "Подарунок хлопцеві, хлопчику, чоловікові",
+    "category": "Чоловікам",
+    "price_min": 52900,
+    "price_max": 52900,
+    "query": "Подарунки для чоловіків",
+    "query_popularity": 2390000,
+    "item_popularity": 94100,
+    "score": 9.3,
+    "tags": [
+      "recipients.men",
+      "recipients.children"
+    ]
   },
   {
     "id": 33,
-    "name": "Кубок «Найкращий бос»",
-    "price": 320,
-    "stars": 4.3,
-    "reviews": 49,
-    "daysSinceAdded": 150,
-    "category": "Кубки",
-    "personalization": true,
-    "stock": false,
-    "googleResults": 61800
+    "title": "ПОДАРУНКОВИЙ НАБІР КВІТИ З ЛОГОТИПОМ",
+    "category": "Подарункові набори",
+    "price_min": 1008,
+    "price_max": 1008,
+    "query": "Корпоративні подарунки",
+    "query_popularity": 990000,
+    "item_popularity": 84000,
+    "score": 7.2,
+    "tags": [
+      "recipients.colleagues",
+      "type.set"
+    ]
   },
   {
     "id": 34,
-    "name": "Кубок «Найкращий колега»",
-    "price": 280,
-    "stars": 4.2,
-    "reviews": 33,
-    "daysSinceAdded": 230,
-    "category": "Кубки",
-    "personalization": true,
-    "stock": true,
-    "googleResults": 48900
+    "title": "Набор чашка и тарелка «Вы интересная чудачка»",
+    "category": "Подарункові набори",
+    "price_min": 370,
+    "price_max": 370,
+    "query": "Оригінальний подарунок на 18 років дівчині",
+    "query_popularity": 287000,
+    "item_popularity": 72300,
+    "score": 10,
+    "tags": [
+      "recipients.women",
+      "occasions.anniversary",
+      "type.original",
+      "type.set"
+    ]
   },
   {
     "id": 35,
-    "name": "Кубок «Козак» бронзовий",
-    "price": 890,
-    "stars": 4.7,
-    "reviews": 82,
-    "daysSinceAdded": 40,
-    "category": "Кубки",
-    "personalization": false,
-    "stock": true,
-    "googleResults": 21300
+    "title": "Кулон підвіска з Гербом України",
+    "category": "Патріотичні",
+    "price_min": 3000,
+    "price_max": 3000,
+    "query": "Подарунки з українською символікою",
+    "query_popularity": 125000,
+    "item_popularity": 67700,
+    "score": 7.9,
+    "tags": [
+      "type.patriotic"
+    ]
   },
   {
     "id": 36,
-    "name": "Кубок спортивний срібний 30см",
-    "price": 640,
-    "stars": 4.4,
-    "reviews": 61,
-    "daysSinceAdded": 78,
-    "category": "Кубки",
-    "personalization": true,
-    "stock": true,
-    "googleResults": 34700
+    "title": "Кулон-підвіска з Гербом України",
+    "category": "Патріотичні",
+    "price_min": 3000,
+    "price_max": 3000,
+    "query": "Подарунки з українською символікою",
+    "query_popularity": 125000,
+    "item_popularity": 67700,
+    "score": 7.9,
+    "tags": [
+      "type.patriotic"
+    ]
   },
   {
     "id": 37,
-    "name": "Кубок «Легенда офісу»",
-    "price": 310,
-    "stars": 4.6,
-    "reviews": 115,
-    "daysSinceAdded": 25,
-    "category": "Кубки",
-    "personalization": true,
-    "stock": true,
-    "googleResults": 38500
+    "title": "Кращий подарунок для чоловіка",
+    "category": "Чоловікам",
+    "price_min": 199,
+    "price_max": 199,
+    "query": "Подарунковий набір",
+    "query_popularity": 1330000,
+    "item_popularity": 67000,
+    "score": 10,
+    "tags": [
+      "recipients.men",
+      "type.set"
+    ]
   },
   {
     "id": 38,
-    "name": "Кубок «Рибалка №1»",
-    "price": 340,
-    "stars": 4.5,
-    "reviews": 77,
-    "daysSinceAdded": 55,
-    "category": "Кубки",
-    "personalization": true,
-    "stock": true,
-    "googleResults": 44200
+    "title": "Набір для в'язання гачком «Кит»",
+    "category": "Подарункові набори",
+    "price_min": 499,
+    "price_max": 499,
+    "query": "Недорогі подарунки для жінок",
+    "query_popularity": 33200,
+    "item_popularity": 58500,
+    "score": 9.3,
+    "tags": [
+      "type.premium",
+      "type.set"
+    ]
   },
   {
     "id": 39,
-    "name": "Нарди подарункові дерев'яні",
-    "price": 980,
-    "stars": 4.7,
-    "reviews": 138,
-    "daysSinceAdded": 16,
-    "category": "Игры",
-    "personalization": false,
-    "stock": true,
-    "googleResults": 168000
+    "title": "АРОМАТИЧНА СВІЧКА УКРАЇНСЬКІ КВІТИ",
+    "category": "Патріотичні",
+    "price_min": 690,
+    "price_max": 690,
+    "query": "Патріотичні подарунки для жінок",
+    "query_popularity": 59300,
+    "item_popularity": 56200,
+    "score": 6.5,
+    "tags": [
+      "type.patriotic"
+    ]
   },
   {
     "id": 40,
-    "name": "Шахи дерев'яні ручна різьба",
-    "price": 1450,
-    "stars": 4.9,
-    "reviews": 178,
-    "daysSinceAdded": 9,
-    "category": "Игры",
-    "personalization": false,
-    "stock": true,
-    "googleResults": 243000
+    "title": "ПРАПОРЕЦЬ СЛАВА УКРАЇНІ",
+    "category": "Патріотичні",
+    "price_min": 2000,
+    "price_max": 2000,
+    "query": "Подарунки з українською символікою",
+    "query_popularity": 125000,
+    "item_popularity": 47000,
+    "score": 7.2,
+    "tags": [
+      "type.patriotic"
+    ]
   },
   {
     "id": 41,
-    "name": "Покерний набір 200 фішок",
-    "price": 750,
-    "stars": 4.5,
-    "reviews": 104,
-    "daysSinceAdded": 45,
-    "category": "Игры",
-    "personalization": false,
-    "stock": true,
-    "googleResults": 194000
+    "title": "Шоколадний набір \"Косметичка\"",
+    "category": "Подарункові набори",
+    "price_min": 195,
+    "price_max": 195,
+    "query": "Прикольні подарунки на День Народження Жінці",
+    "query_popularity": 284000,
+    "item_popularity": 42400,
+    "score": 10,
+    "tags": [
+      "occasions.birthday",
+      "type.funny",
+      "type.set"
+    ]
   },
   {
     "id": 42,
-    "name": "Настільна гра «Монополія Україна»",
-    "price": 620,
-    "stars": 4.6,
-    "reviews": 155,
-    "daysSinceAdded": 28,
-    "category": "Игры",
-    "personalization": false,
-    "stock": true,
-    "googleResults": 412000
+    "title": "Набір листівок «Це все тобі!» 10 шт",
+    "category": "Подарункові набори",
+    "price_min": 249,
+    "price_max": 249,
+    "query": "Подарунки для дорослих",
+    "query_popularity": 3790000,
+    "item_popularity": 33400,
+    "score": 8.6,
+    "tags": [
+      "type.set"
+    ]
   },
   {
     "id": 43,
-    "name": "Дартс магнітний для всієї сім'ї",
-    "price": 380,
-    "stars": 4.2,
-    "reviews": 66,
-    "daysSinceAdded": 112,
-    "category": "Игры",
-    "personalization": false,
-    "stock": true,
-    "googleResults": 87300
+    "title": "Магнітний ігровий набір 3 в 1 (шахи, шашки, нарди)",
+    "category": "Подарункові набори",
+    "price_min": 477,
+    "price_max": 477,
+    "query": "Подарунок на 30 років хлопцю",
+    "query_popularity": 41700,
+    "item_popularity": 31500,
+    "score": 7.9,
+    "tags": [
+      "recipients.men",
+      "occasions.anniversary",
+      "type.set"
+    ]
   },
   {
     "id": 44,
-    "name": "Квест у конверті «Шпигун»",
-    "price": 199,
-    "stars": 4.4,
-    "reviews": 91,
-    "daysSinceAdded": 37,
-    "category": "Игры",
-    "personalization": false,
-    "stock": true,
-    "googleResults": 63400
+    "title": "Подарунковий набір з термосом і чашками",
+    "category": "Подарункові набори",
+    "price_min": 1409,
+    "price_max": 1409,
+    "query": "Статусні подарунки",
+    "query_popularity": 5180,
+    "item_popularity": 30900,
+    "score": 6.5,
+    "tags": [
+      "type.premium",
+      "type.set"
+    ]
   },
   {
     "id": 45,
-    "name": "Пазл 1000 елементів «Карпати»",
-    "price": 275,
-    "stars": 4.3,
-    "reviews": 48,
-    "daysSinceAdded": 160,
-    "category": "Игры",
-    "personalization": false,
-    "stock": false,
-    "googleResults": 95200
+    "title": "Шоколадний набір \"Ключі\"",
+    "category": "Подарункові набори",
+    "price_min": 175,
+    "price_max": 175,
+    "query": "Подарунок на 20 років хлопцю",
+    "query_popularity": 238000,
+    "item_popularity": 29100,
+    "score": 10,
+    "tags": [
+      "recipients.men",
+      "occasions.anniversary",
+      "type.set"
+    ]
   },
   {
     "id": 46,
-    "name": "Шашки дерев'яні подарункові",
-    "price": 440,
-    "stars": 4.1,
-    "reviews": 29,
-    "daysSinceAdded": 250,
-    "category": "Игры",
-    "personalization": false,
-    "stock": true,
-    "googleResults": 51800
+    "title": "Набор стаканов для виски Вокруг Света (2 шт)",
+    "category": "Подарункові набори",
+    "price_min": 866,
+    "price_max": 866,
+    "query": "Сувениры для мужчин",
+    "query_popularity": 2490000,
+    "item_popularity": 29000,
+    "score": 7.2,
+    "tags": [
+      "recipients.men",
+      "type.set"
+    ]
   },
   {
     "id": 47,
-    "name": "Настільна гра «Мафія» делюкс",
-    "price": 490,
-    "stars": 4.7,
-    "reviews": 167,
-    "daysSinceAdded": 11,
-    "category": "Игры",
-    "personalization": false,
-    "stock": true,
-    "googleResults": 318000
+    "title": "Дерев’яні статуетки Тризуб України",
+    "category": "Патріотичні",
+    "price_min": 4000,
+    "price_max": 4000,
+    "query": "Подарунки з українською символікою",
+    "query_popularity": 125000,
+    "item_popularity": 27300,
+    "score": 7.9,
+    "tags": [
+      "type.patriotic"
+    ]
   },
   {
     "id": 48,
-    "name": "Гра «Правда або Дія» для компанії",
-    "price": 10,
-    "stars": 3.7,
-    "reviews": 0,
-    "daysSinceAdded": 365,
-    "category": "Игры",
-    "personalization": false,
-    "stock": true,
-    "googleResults": 476000
+    "title": "ПРАПОР УКРАЇНИ 90*60 СМ (З АТЛАСУ)",
+    "category": "Патріотичні",
+    "price_min": 18800,
+    "price_max": 18800,
+    "query": "Подарунки з українською символікою",
+    "query_popularity": 125000,
+    "item_popularity": 26000,
+    "score": 7.2,
+    "tags": [
+      "type.patriotic"
+    ]
   },
   {
     "id": 49,
-    "name": "Настільний футбол дерев'яний",
-    "price": 1850,
-    "stars": 4.8,
-    "reviews": 144,
-    "daysSinceAdded": 6,
-    "category": "Игры",
-    "personalization": false,
-    "stock": true,
-    "googleResults": 172000
+    "title": "Футболка жіноча Діброва",
+    "category": "Патріотичні",
+    "price_min": 690,
+    "price_max": 690,
+    "query": "Патріотичні подарунки для жінок",
+    "query_popularity": 59300,
+    "item_popularity": 22800,
+    "score": 10,
+    "tags": [
+      "type.patriotic"
+    ]
   },
   {
     "id": 50,
-    "name": "Квест «Детектив» для двох",
-    "price": 235,
-    "stars": 4.5,
-    "reviews": 83,
-    "daysSinceAdded": 58,
-    "category": "Игры",
-    "personalization": false,
-    "stock": true,
-    "googleResults": 84700
+    "title": "Подарунковий набір \"Real man\"",
+    "category": "Подарункові набори",
+    "price_min": 569,
+    "price_max": 569,
+    "query": "Подарунок на 30 років хлопцю",
+    "query_popularity": 41700,
+    "item_popularity": 20300,
+    "score": 7.9,
+    "tags": [
+      "recipients.men",
+      "occasions.anniversary",
+      "type.set"
+    ]
+  },
+  {
+    "id": 51,
+    "title": "ПОДАРУНКОВИЙ НАБІР З 3-Х Я З ТОБОЮ",
+    "category": "Подарункові набори",
+    "price_min": 1020,
+    "price_max": 1020,
+    "query": "Подарунковий набір",
+    "query_popularity": 1330000,
+    "item_popularity": 19000,
+    "score": 7.9,
+    "tags": [
+      "type.set"
+    ]
+  },
+  {
+    "id": 52,
+    "title": "Подарунковий набір Kinder Surprise L 31×24×9 см",
+    "category": "Подарункові набори",
+    "price_min": 1688,
+    "price_max": 1688,
+    "query": "Купити подарунок на 18 років хлопцю",
+    "query_popularity": 30500,
+    "item_popularity": 18600,
+    "score": 5.8,
+    "tags": [
+      "recipients.men",
+      "occasions.anniversary",
+      "type.set"
+    ]
+  },
+  {
+    "id": 53,
+    "title": "Кулон підвіска з Гербом України різні види",
+    "category": "Патріотичні",
+    "price_min": 3300,
+    "price_max": 3300,
+    "query": "Подарунки з українською символікою",
+    "query_popularity": 125000,
+    "item_popularity": 15200,
+    "score": 7.9,
+    "tags": [
+      "type.patriotic"
+    ]
+  },
+  {
+    "id": 54,
+    "title": "Набір для створення 3D зліпку рук",
+    "category": "Подарункові набори",
+    "price_min": 53000,
+    "price_max": 53000,
+    "query": "Подарунки для дівчат",
+    "query_popularity": 1300000,
+    "item_popularity": 14500,
+    "score": 7.9,
+    "tags": [
+      "type.set"
+    ]
+  },
+  {
+    "id": 55,
+    "title": "Набір аксесуарів зі шкіри \"Ліверпуль\"",
+    "category": "Подарункові набори",
+    "price_min": 2150,
+    "price_max": 2150,
+    "query": "Що подарувати шефу у якого все є",
+    "query_popularity": 2400,
+    "item_popularity": 13900,
+    "score": 7.9,
+    "tags": [
+      "recipients.colleagues",
+      "recipients.special",
+      "type.set"
+    ]
+  },
+  {
+    "id": 56,
+    "title": "Еротичний набір THE BITCH IS SLEEPING (чорний)",
+    "category": "Подарункові набори",
+    "price_min": 310,
+    "price_max": 310,
+    "query": "Подарунки для дорослих",
+    "query_popularity": 3790000,
+    "item_popularity": 13300,
+    "score": 10,
+    "tags": [
+      "type.set"
+    ]
+  },
+  {
+    "id": 57,
+    "title": "Фартух прикольний \"Україна понад усе\"",
+    "category": "Патріотичні",
+    "price_min": 289,
+    "price_max": 289,
+    "query": "Подарунок на 20 років сину",
+    "query_popularity": 374000,
+    "item_popularity": 11300,
+    "score": 8.6,
+    "tags": [
+      "occasions.anniversary",
+      "type.funny"
+    ]
+  },
+  {
+    "id": 58,
+    "title": "Набір 6 чарок для горілки”HOURSE”",
+    "category": "Подарункові набори",
+    "price_min": 11950,
+    "price_max": 11950,
+    "query": "Елітні подарунки",
+    "query_popularity": 1900000,
+    "item_popularity": 11300,
+    "score": 8.6,
+    "tags": [
+      "type.premium",
+      "type.set"
+    ]
+  },
+  {
+    "id": 59,
+    "title": "Еротичний набір THE BITCH IS SLEEPING (червоний)",
+    "category": "Подарункові набори",
+    "price_min": 310,
+    "price_max": 310,
+    "query": "Подарунки для дорослих",
+    "query_popularity": 3790000,
+    "item_popularity": 10200,
+    "score": 10,
+    "tags": [
+      "type.set"
+    ]
+  },
+  {
+    "id": 60,
+    "title": "Прикольний фартух \"Все буде Україна\"",
+    "category": "Патріотичні",
+    "price_min": 289,
+    "price_max": 289,
+    "query": "Цікаві подарунки для жінок",
+    "query_popularity": 1030000,
+    "item_popularity": 10200,
+    "score": 10,
+    "tags": [
+      "type.original",
+      "type.funny"
+    ]
+  },
+  {
+    "id": 61,
+    "title": "ПРАПОР УКРАЇНИ 60Х40 СМ",
+    "category": "Патріотичні",
+    "price_min": 10700,
+    "price_max": 10700,
+    "query": "Подарунки з українською символікою",
+    "query_popularity": 125000,
+    "item_popularity": 8140,
+    "score": 7.2,
+    "tags": [
+      "type.patriotic"
+    ]
+  },
+  {
+    "id": 62,
+    "title": "Дорожня подушка \"Український орнамент\"",
+    "category": "Патріотичні",
+    "price_min": 763,
+    "price_max": 763,
+    "query": "Патріотичні подарунки",
+    "query_popularity": 730000,
+    "item_popularity": 7930,
+    "score": 3.7,
+    "tags": [
+      "type.patriotic"
+    ]
+  },
+  {
+    "id": 63,
+    "title": "ПРАПОРЕЦЬ УКРАЇНА ЄДИНА",
+    "category": "Патріотичні",
+    "price_min": 2000,
+    "price_max": 2000,
+    "query": "Подарунки з українською символікою",
+    "query_popularity": 125000,
+    "item_popularity": 7880,
+    "score": 7.2,
+    "tags": [
+      "type.patriotic"
+    ]
+  },
+  {
+    "id": 64,
+    "title": "Конструктор Lamborghini Sian FKP 37 (3696 елементів)",
+    "category": "Іграшки",
+    "price_min": 5000,
+    "price_max": 5000,
+    "query": "Купити подарунок на 18 років хлопцю",
+    "query_popularity": 30500,
+    "item_popularity": 7720,
+    "score": 7.2,
+    "tags": [
+      "recipients.men",
+      "occasions.anniversary"
+    ]
+  },
+  {
+    "id": 65,
+    "title": "Набір електричних млинів для спецій",
+    "category": "Подарункові набори",
+    "price_min": 1650,
+    "price_max": 1650,
+    "query": "Елітні подарунки для жінок",
+    "query_popularity": 47700,
+    "item_popularity": 6160,
+    "score": 10,
+    "tags": [
+      "type.premium",
+      "type.set"
+    ]
+  },
+  {
+    "id": 66,
+    "title": "ПОДАРУНКОВИЙ НАБІР КОЛЯДА З ЛОГОТИПОМ",
+    "category": "Подарункові набори",
+    "price_min": 1948,
+    "price_max": 1948,
+    "query": "Корпоративні подарунки",
+    "query_popularity": 990000,
+    "item_popularity": 5850,
+    "score": 7.2,
+    "tags": [
+      "recipients.colleagues",
+      "type.set"
+    ]
+  },
+  {
+    "id": 67,
+    "title": "Планер Успеха Статного Мужчины (укр)",
+    "category": "Чоловікам",
+    "price_min": 559,
+    "price_max": 559,
+    "query": "Дорогие подарки",
+    "query_popularity": 8990000,
+    "item_popularity": 5740,
+    "score": 5.8,
+    "tags": [
+      "recipients.men",
+      "type.premium"
+    ]
+  },
+  {
+    "id": 68,
+    "title": "Патріотичний подарунок для чоловіка №148",
+    "category": "Чоловікам",
+    "price_min": 79300,
+    "price_max": 79300,
+    "query": "Патріотичні подарунки для чоловіків",
+    "query_popularity": 76500,
+    "item_popularity": 5580,
+    "score": 5.8,
+    "tags": [
+      "recipients.men",
+      "type.patriotic"
+    ]
+  },
+  {
+    "id": 69,
+    "title": "НАСТІЛЬНА ГРА ЛІНІЯ ЧАСУ УКРАЇНА",
+    "category": "Патріотичні",
+    "price_min": 650,
+    "price_max": 650,
+    "query": "Патріотичні подарунки для жінок",
+    "query_popularity": 59300,
+    "item_popularity": 5230,
+    "score": 6.5,
+    "tags": [
+      "type.patriotic"
+    ]
+  },
+  {
+    "id": 70,
+    "title": "Фартук прикольный \"Україна понад усе\"",
+    "category": "Патріотичні",
+    "price_min": 289,
+    "price_max": 289,
+    "query": "Сувениры для мужчин",
+    "query_popularity": 2490000,
+    "item_popularity": 4860,
+    "score": 7.9,
+    "tags": [
+      "recipients.men",
+      "type.funny"
+    ]
+  },
+  {
+    "id": 71,
+    "title": "Футболка чоловіча Діброва",
+    "category": "Патріотичні",
+    "price_min": 690,
+    "price_max": 690,
+    "query": "Патріотичні подарунки для жінок",
+    "query_popularity": 59300,
+    "item_popularity": 4630,
+    "score": 10,
+    "tags": [
+      "type.patriotic"
+    ]
+  },
+  {
+    "id": 72,
+    "title": "М'яка іграшка плюшевий ведмедик Рафаель 160 см Блакитний",
+    "category": "Іграшки",
+    "price_min": 1543,
+    "price_max": 1543,
+    "query": "Оригінальний подарунок на 18 років",
+    "query_popularity": 1150000,
+    "item_popularity": 4130,
+    "score": 8.6,
+    "tags": [
+      "occasions.anniversary",
+      "type.original"
+    ]
+  },
+  {
+    "id": 73,
+    "title": "ПОДАРУНКОВИЙ НАБІР ЩОСЬ ЦІКАВЕ З ЛОГОТИПОМ",
+    "category": "Подарункові набори",
+    "price_min": 944,
+    "price_max": 944,
+    "query": "Корпоративні подарунки",
+    "query_popularity": 990000,
+    "item_popularity": 3010,
+    "score": 7.2,
+    "tags": [
+      "recipients.colleagues",
+      "type.original",
+      "type.set"
+    ]
+  },
+  {
+    "id": 74,
+    "title": "Консервовані труси «Справжнього чоловіка»",
+    "category": "Чоловікам",
+    "price_min": 250,
+    "price_max": 250,
+    "query": "Що подарувати чоловіку на Новий рік",
+    "query_popularity": 285000,
+    "item_popularity": 2850,
+    "score": 7.2,
+    "tags": [
+      "recipients.men",
+      "occasions.new_year"
+    ]
+  },
+  {
+    "id": 75,
+    "title": "ПОДАРУНКОВИЙ НАБІР З 2-Х МАМИНА МУДРІСТЬ",
+    "category": "Подарункові набори",
+    "price_min": 545,
+    "price_max": 545,
+    "query": "Подарунковий набір",
+    "query_popularity": 1330000,
+    "item_popularity": 2810,
+    "score": 7.9,
+    "tags": [
+      "type.set"
+    ]
+  },
+  {
+    "id": 76,
+    "title": "Консервовані Носки Сильної та Незалежної",
+    "category": "Жінкам",
+    "price_min": 120,
+    "price_max": 120,
+    "query": "Прикольні подарунки на День Народження Жінці",
+    "query_popularity": 284000,
+    "item_popularity": 2650,
+    "score": 5.1,
+    "tags": [
+      "occasions.birthday",
+      "type.funny"
+    ]
+  },
+  {
+    "id": 77,
+    "title": "Подарунок з українською символікою в патріотичному стилі для іноземцям №137",
+    "category": "Патріотичні",
+    "price_min": 79300,
+    "price_max": 79300,
+    "query": "Патріотичні подарунки для чоловіків",
+    "query_popularity": 76500,
+    "item_popularity": 2300,
+    "score": 5.8,
+    "tags": [
+      "recipients.men",
+      "recipients.special",
+      "type.patriotic"
+    ]
+  },
+  {
+    "id": 78,
+    "title": "ПРАПОР УКРАЇНИ ГАБАРДИНОВИЙ З ТРИЗУБОМ 90*135",
+    "category": "Патріотичні",
+    "price_min": 55000,
+    "price_max": 55000,
+    "query": "Подарунки з українською символікою",
+    "query_popularity": 125000,
+    "item_popularity": 2220,
+    "score": 7.2,
+    "tags": [
+      "type.patriotic"
+    ]
+  },
+  {
+    "id": 79,
+    "title": "Набір ручок Parker IM Black GT FP+BP (перова + кулькова)",
+    "category": "Подарункові набори",
+    "price_min": 4362,
+    "price_max": 4362,
+    "query": "Статусні подарунки",
+    "query_popularity": 5180,
+    "item_popularity": 2000,
+    "score": 3.7,
+    "tags": [
+      "type.premium",
+      "type.set"
+    ]
+  },
+  {
+    "id": 80,
+    "title": "Подарунок з українською символікою №140 український подарунок для іноземця в патріотичному стилі.",
+    "category": "Патріотичні",
+    "price_min": 719,
+    "price_max": 719,
+    "query": "Патріотичні подарунки для іноземців",
+    "query_popularity": 2500,
+    "item_popularity": 1980,
+    "score": 9.3,
+    "tags": [
+      "recipients.special",
+      "type.patriotic"
+    ]
+  },
+  {
+    "id": 81,
+    "title": "Український подарунок для іноземця №106 Патріотичний подарунок в українському стилі \"Слава Україні, Героям слава\"",
+    "category": "Патріотичні",
+    "price_min": 79300,
+    "price_max": 79300,
+    "query": "Патріотичні подарунки для чоловіків",
+    "query_popularity": 76500,
+    "item_popularity": 1730,
+    "score": 5.8,
+    "tags": [
+      "recipients.men",
+      "recipients.special",
+      "type.patriotic"
+    ]
+  },
+  {
+    "id": 82,
+    "title": "Vivian GrayWild Flowers подарунковий набір для рук",
+    "category": "Подарункові набори",
+    "price_min": 300,
+    "price_max": 300,
+    "query": "Цікаві подарунки для жінок",
+    "query_popularity": 1030000,
+    "item_popularity": 1690,
+    "score": 7.9,
+    "tags": [
+      "type.original",
+      "type.set"
+    ]
+  },
+  {
+    "id": 83,
+    "title": "Подарунковий набір для жінок Бокс Романтичний [Макс]",
+    "category": "Подарункові набори",
+    "price_min": 1155,
+    "price_max": 1155,
+    "query": "Купити подарунок на 18 років хлопцю",
+    "query_popularity": 30500,
+    "item_popularity": 1650,
+    "score": 5.8,
+    "tags": [
+      "recipients.men",
+      "occasions.anniversary",
+      "type.set"
+    ]
+  },
+  {
+    "id": 84,
+    "title": "Подарунковий сюрприз бокс на 14 лютого для дівчини: сюрприз бокс для Коханої [Макс] на День закоханих!",
+    "category": "Подарункові набори",
+    "price_min": 1155,
+    "price_max": 1155,
+    "query": "Подарунковий набір",
+    "query_popularity": 1330000,
+    "item_popularity": 1560,
+    "score": 10,
+    "tags": [
+      "recipients.women",
+      "occasions.holiday",
+      "type.set"
+    ]
+  },
+  {
+    "id": 85,
+    "title": "Набор для копчения напитков SMOK MASTER BIG",
+    "category": "Подарункові набори",
+    "price_min": 1950,
+    "price_max": 1950,
+    "query": "Сувениры для мужчин",
+    "query_popularity": 2490000,
+    "item_popularity": 1550,
+    "score": 7.9,
+    "tags": [
+      "recipients.men",
+      "type.set"
+    ]
+  },
+  {
+    "id": 86,
+    "title": "Набір ручок Parker IM Stainless Steel CT FP+BP (перова + кулькова + чохол)",
+    "category": "Подарункові набори",
+    "price_min": 2842,
+    "price_max": 2842,
+    "query": "Статусні подарунки",
+    "query_popularity": 5180,
+    "item_popularity": 1290,
+    "score": 3.7,
+    "tags": [
+      "type.premium",
+      "type.set"
+    ]
+  },
+  {
+    "id": 87,
+    "title": "Кавовий набір з чорним шоколадом \"Для справжнього Чоловіка\"",
+    "category": "Подарункові набори",
+    "price_min": 479,
+    "price_max": 479,
+    "query": "Подарунок на 30 років хлопцю",
+    "query_popularity": 41700,
+    "item_popularity": 1270,
+    "score": 7.9,
+    "tags": [
+      "recipients.men",
+      "occasions.anniversary",
+      "type.set"
+    ]
+  },
+  {
+    "id": 88,
+    "title": "Подарунковий набір «Весела аптечка»",
+    "category": "Подарункові набори",
+    "price_min": 995,
+    "price_max": 995,
+    "query": "Подарунок на 20 років сину",
+    "query_popularity": 374000,
+    "item_popularity": 1150,
+    "score": 8.6,
+    "tags": [
+      "occasions.anniversary",
+      "type.set"
+    ]
+  },
+  {
+    "id": 89,
+    "title": "Антистрес боксерська настільна груша",
+    "category": "Подарункові набори",
+    "price_min": 1386,
+    "price_max": 1386,
+    "query": "Статусні подарунки",
+    "query_popularity": 5180,
+    "item_popularity": 1110,
+    "score": 6.5,
+    "tags": [
+      "type.premium"
+    ]
+  },
+  {
+    "id": 90,
+    "title": "Подарунковий набір MLT Black Tech 3в1: Термопляшка, Bluetooth-колонка та Power Bank Чорний",
+    "category": "Подарункові набори",
+    "price_min": 1539,
+    "price_max": 1539,
+    "query": "Купити подарунок на 18 років хлопцю",
+    "query_popularity": 30500,
+    "item_popularity": 1110,
+    "score": 5.8,
+    "tags": [
+      "recipients.men",
+      "occasions.anniversary",
+      "type.set"
+    ]
+  },
+  {
+    "id": 91,
+    "title": "Приколка Bow Tie House на піджак патріотична серце 29427",
+    "category": "Патріотичні",
+    "price_min": 120,
+    "price_max": 120,
+    "query": "Прикольні подарунки на День Народження Жінці",
+    "query_popularity": 284000,
+    "item_popularity": 1040,
+    "score": 5.1,
+    "tags": [
+      "occasions.birthday",
+      "type.funny",
+      "type.patriotic"
+    ]
+  },
+  {
+    "id": 92,
+    "title": "ПРАПОРЕЦЬ УКРАЇНИ З ТРИЗУБОМ (БЕЗ ПАЛИЧКИ) РОЗПРОДАЖ 19*12 СМ",
+    "category": "Патріотичні",
+    "price_min": 800,
+    "price_max": 800,
+    "query": "Подарунки з українською символікою",
+    "query_popularity": 125000,
+    "item_popularity": 1000,
+    "score": 7.2,
+    "tags": [
+      "type.patriotic"
+    ]
+  },
+  {
+    "id": 93,
+    "title": "Vivian GrayTemptation подарунковий набір для рук",
+    "category": "Подарункові набори",
+    "price_min": 330,
+    "price_max": 330,
+    "query": "Цікаві подарунки для жінок",
+    "query_popularity": 1030000,
+    "item_popularity": 927,
+    "score": 7.9,
+    "tags": [
+      "type.original",
+      "type.set"
+    ]
+  },
+  {
+    "id": 94,
+    "title": "Патріотичний подарунок для жінок №155 з українською символікою для іноземців.",
+    "category": "Патріотичні",
+    "price_min": 42200,
+    "price_max": 42200,
+    "query": "Патріотичні подарунки для чоловіків",
+    "query_popularity": 76500,
+    "item_popularity": 887,
+    "score": 5.8,
+    "tags": [
+      "recipients.men",
+      "recipients.special",
+      "type.patriotic"
+    ]
+  },
+  {
+    "id": 95,
+    "title": "Патріотичні подарунки чоловікам №154 Українські подарунки для іноземців в українському стилі.",
+    "category": "Чоловікам",
+    "price_min": 45500,
+    "price_max": 45500,
+    "query": "Патріотичні подарунки для чоловіків",
+    "query_popularity": 76500,
+    "item_popularity": 881,
+    "score": 5.8,
+    "tags": [
+      "recipients.men",
+      "recipients.special",
+      "type.patriotic"
+    ]
+  },
+  {
+    "id": 96,
+    "title": "Подарунки в українському стилі №140 Патріотичний український подарунок для іноземця.",
+    "category": "Патріотичні",
+    "price_min": 71900,
+    "price_max": 71900,
+    "query": "Патріотичні подарунки для чоловіків",
+    "query_popularity": 76500,
+    "item_popularity": 880,
+    "score": 5.8,
+    "tags": [
+      "recipients.men",
+      "recipients.special",
+      "type.patriotic"
+    ]
+  },
+  {
+    "id": 97,
+    "title": "Жіночий набір аксесуарів з годинником та прикрасами",
+    "category": "Подарункові набори",
+    "price_min": 386,
+    "price_max": 386,
+    "query": "Цікаві подарунки для жінок",
+    "query_popularity": 1030000,
+    "item_popularity": 825,
+    "score": 6.5,
+    "tags": [
+      "type.original",
+      "type.set"
+    ]
+  },
+  {
+    "id": 98,
+    "title": "Шоколадний набір \"Shokophone\"",
+    "category": "Подарункові набори",
+    "price_min": 479,
+    "price_max": 479,
+    "query": "Прикольні подарунки на День Народження Жінці",
+    "query_popularity": 284000,
+    "item_popularity": 810,
+    "score": 10,
+    "tags": [
+      "occasions.birthday",
+      "type.funny",
+      "type.set"
+    ]
+  },
+  {
+    "id": 99,
+    "title": "SpokeyMonster набір гантелей",
+    "category": "Подарункові набори",
+    "price_min": 260,
+    "price_max": 260,
+    "query": "Цікаві подарунки для жінок",
+    "query_popularity": 1030000,
+    "item_popularity": 798,
+    "score": 7.9,
+    "tags": [
+      "type.original",
+      "type.set"
+    ]
+  },
+  {
+    "id": 100,
+    "title": "Набір для копчення напоїв SMOK MASTER BIG",
+    "category": "Подарункові набори",
+    "price_min": 1950,
+    "price_max": 1950,
+    "query": "Що подарувати шефу у якого все є",
+    "query_popularity": 2400,
+    "item_popularity": 791,
+    "score": 7.9,
+    "tags": [
+      "recipients.colleagues",
+      "recipients.special",
+      "type.set"
+    ]
+  },
+  {
+    "id": 101,
+    "title": "Патріотичний подарунок в українському стилі №143 та українською символікою для іноземця.",
+    "category": "Патріотичні",
+    "price_min": 79300,
+    "price_max": 79300,
+    "query": "Патріотичні подарунки для чоловіків",
+    "query_popularity": 76500,
+    "item_popularity": 771,
+    "score": 5.8,
+    "tags": [
+      "recipients.men",
+      "recipients.special",
+      "type.patriotic"
+    ]
+  },
+  {
+    "id": 102,
+    "title": "Подарунковий набір “Бузкова гармонія”",
+    "category": "Подарункові набори",
+    "price_min": 1150,
+    "price_max": 1150,
+    "query": "Корпоративні подарунки",
+    "query_popularity": 990000,
+    "item_popularity": 709,
+    "score": 7.9,
+    "tags": [
+      "recipients.colleagues",
+      "type.set"
+    ]
+  },
+  {
+    "id": 103,
+    "title": "Подарунки для військового на Новий рік чоловікові, набір зі шкіри з гравіюванням, WOODPRESENT",
+    "category": "Військовим",
+    "price_min": 1750,
+    "price_max": 1750,
+    "query": "Що подарувати чоловіку на Новий рік",
+    "query_popularity": 285000,
+    "item_popularity": 687,
+    "score": 5.1,
+    "tags": [
+      "recipients.men",
+      "recipients.military",
+      "occasions.new_year",
+      "type.set"
+    ]
+  },
+  {
+    "id": 104,
+    "title": "Красиві дерев'яні чотки з Гербом України",
+    "category": "Патріотичні",
+    "price_min": 3000,
+    "price_max": 3000,
+    "query": "Подарунки з українською символікою",
+    "query_popularity": 125000,
+    "item_popularity": 675,
+    "score": 7.9,
+    "tags": [
+      "type.patriotic"
+    ]
+  },
+  {
+    "id": 105,
+    "title": "Роза в колбі з LED підсвіткою, вічна троянда нічник декоративна лампа в спальню подарунок на 8 Березня дівчині подарунок для жінки романтичний дружині мамі на день народження троянда біла з батарейками в комплекті декор для інтер'єру 2100037",
+    "category": "Жінкам",
+    "price_min": 865,
+    "price_max": 865,
+    "query": "Купити подарунок на 18 років хлопцю",
+    "query_popularity": 30500,
+    "item_popularity": 668,
+    "score": 5.8,
+    "tags": [
+      "recipients.men",
+      "recipients.women",
+      "occasions.birthday",
+      "occasions.anniversary"
+    ]
+  },
+  {
+    "id": 106,
+    "title": "Вінтажний подарунковий набір для каліграфії Ручка перова (білий)",
+    "category": "Подарункові набори",
+    "price_min": 648,
+    "price_max": 648,
+    "query": "Елітні подарунки для жінок",
+    "query_popularity": 47700,
+    "item_popularity": 632,
+    "score": 10,
+    "tags": [
+      "type.premium",
+      "type.set"
+    ]
+  },
+  {
+    "id": 107,
+    "title": "Гарний плюшевий ведмедик у подарунок ведмідь 160 см м'які іграшки ведмеді подарунки на день народження дівчині",
+    "category": "Іграшки",
+    "price_min": 1772,
+    "price_max": 1772,
+    "query": "Подарунки на день народження для дівчат",
+    "query_popularity": 662000,
+    "item_popularity": 631,
+    "score": 10,
+    "tags": [
+      "recipients.women",
+      "occasions.birthday"
+    ]
+  },
+  {
+    "id": 108,
+    "title": "ПОДАРУНКОВИЙ НАБІР З 3-Х РОЗКВІТАЙ",
+    "category": "Подарункові набори",
+    "price_min": 1245,
+    "price_max": 1245,
+    "query": "Подарунковий набір",
+    "query_popularity": 1330000,
+    "item_popularity": 563,
+    "score": 7.9,
+    "tags": [
+      "type.set"
+    ]
+  },
+  {
+    "id": 109,
+    "title": "Подарунковий набір для чоловіків Mr.Scrubber Deep cleaning and care (4820200411484)",
+    "category": "Подарункові набори",
+    "price_min": 990,
+    "price_max": 990,
+    "query": "Подарункові набори для чоловіків",
+    "query_popularity": 1830000,
+    "item_popularity": 528,
+    "score": 7.9,
+    "tags": [
+      "recipients.men",
+      "type.set"
+    ]
+  },
+  {
+    "id": 110,
+    "title": "Великий Плюшевий ведмідь 200 см Молочний, Ведмедики 2 метри, подарунок для дівчини на день народження",
+    "category": "Жінкам",
+    "price_min": 1929,
+    "price_max": 1929,
+    "query": "Подарунки на день народження для дівчат",
+    "query_popularity": 662000,
+    "item_popularity": 505,
+    "score": 10,
+    "tags": [
+      "recipients.women",
+      "occasions.birthday"
+    ]
+  },
+  {
+    "id": 111,
+    "title": "Подарунковий набір для чоловіків STR8 Game Дезодорант-спрей 150 мл + Гель для душу 400 мл (4823058344737)",
+    "category": "Подарункові набори",
+    "price_min": 344,
+    "price_max": 344,
+    "query": "Подарункові набори для чоловіків",
+    "query_popularity": 1830000,
+    "item_popularity": 469,
+    "score": 7.9,
+    "tags": [
+      "recipients.men",
+      "type.set"
+    ]
+  },
+  {
+    "id": 112,
+    "title": "Подарунковий набір для чоловіків STR8 Red Code Дезодорант-спрей 150 мл + Гель для душу 400 мл (4823058344751)",
+    "category": "Подарункові набори",
+    "price_min": 344,
+    "price_max": 344,
+    "query": "Подарункові набори для чоловіків",
+    "query_popularity": 1830000,
+    "item_popularity": 458,
+    "score": 7.9,
+    "tags": [
+      "recipients.men",
+      "type.set"
+    ]
+  },
+  {
+    "id": 113,
+    "title": "Подарунковий набір STR8 Red Code Туалетна вода 100 мл + Дезодорант-спрей 150 мл (4823058342122)",
+    "category": "Подарункові набори",
+    "price_min": 899,
+    "price_max": 899,
+    "query": "Подарункові набори для чоловіків",
+    "query_popularity": 1830000,
+    "item_popularity": 456,
+    "score": 7.9,
+    "tags": [
+      "recipients.men",
+      "type.set"
+    ]
+  },
+  {
+    "id": 114,
+    "title": "Скретч-карта Відкривай Україну на украинском языке",
+    "category": "Патріотичні",
+    "price_min": 425,
+    "price_max": 425,
+    "query": "Оригінальний подарунок на 18 років дівчині",
+    "query_popularity": 287000,
+    "item_popularity": 451,
+    "score": 10,
+    "tags": [
+      "recipients.women",
+      "occasions.anniversary",
+      "type.original"
+    ]
+  },
+  {
+    "id": 115,
+    "title": "Патріотичний подарунок з українською символікою, чудово підійде як подарунок іноземцям.",
+    "category": "Патріотичні",
+    "price_min": 69500,
+    "price_max": 69500,
+    "query": "Патріотичні подарунки для чоловіків",
+    "query_popularity": 76500,
+    "item_popularity": 435,
+    "score": 5.8,
+    "tags": [
+      "recipients.men",
+      "recipients.special",
+      "type.patriotic"
+    ]
+  },
+  {
+    "id": 116,
+    "title": "Vivian GrayRomance Vanilla & Patchouli подарунковий набір для рук",
+    "category": "Подарункові набори",
+    "price_min": 330,
+    "price_max": 330,
+    "query": "Цікаві подарунки для жінок",
+    "query_popularity": 1030000,
+    "item_popularity": 430,
+    "score": 7.9,
+    "tags": [
+      "type.original",
+      "type.set"
+    ]
+  },
+  {
+    "id": 117,
+    "title": "Подарунковий набір для чоловіків Barber Blend Arizona (4820200418063)",
+    "category": "Подарункові набори",
+    "price_min": 704,
+    "price_max": 704,
+    "query": "Подарункові набори для чоловіків",
+    "query_popularity": 1830000,
+    "item_popularity": 424,
+    "score": 7.9,
+    "tags": [
+      "recipients.men",
+      "type.set"
+    ]
+  },
+  {
+    "id": 118,
+    "title": "Хамон Zaino нога Палета з хамонеро в наборі 4-4.5кг, Іспанія",
+    "category": "Подарункові набори",
+    "price_min": 3499,
+    "price_max": 3499,
+    "query": "Подарунки для дорослих",
+    "query_popularity": 3790000,
+    "item_popularity": 422,
+    "score": 4.4,
+    "tags": [
+      "type.set"
+    ]
+  },
+  {
+    "id": 119,
+    "title": "Подарунковий набір Grana Padano із 5 компонентів, Італія",
+    "category": "Подарункові набори",
+    "price_min": 1799,
+    "price_max": 1799,
+    "query": "Подарунки для дорослих",
+    "query_popularity": 3790000,
+    "item_popularity": 417,
+    "score": 4.4,
+    "tags": [
+      "type.set"
+    ]
+  },
+  {
+    "id": 120,
+    "title": "Подарунковий набір для чоловіків Barbers Caffeine & Lemongrass Шампунь для мужчин для ежедневного использования Original 400 мл + Бальзам для бороды Original 50 мл + Носки мужские Trust me (4823109407930)",
+    "category": "Подарункові набори",
+    "price_min": 998,
+    "price_max": 998,
+    "query": "Подарункові набори для чоловіків",
+    "query_popularity": 1830000,
+    "item_popularity": 404,
+    "score": 7.9,
+    "tags": [
+      "recipients.men",
+      "type.set"
+    ]
+  },
+  {
+    "id": 121,
+    "title": "Пазл благодійний ORNER х Yasno «Як українці під час відключень єдналися» 500 елементів",
+    "category": "Патріотичні",
+    "price_min": 500,
+    "price_max": 500,
+    "query": "Подарунки для дорослих",
+    "query_popularity": 3790000,
+    "item_popularity": 398,
+    "score": 5.1,
+    "tags": [
+      "type.patriotic"
+    ]
+  },
+  {
+    "id": 122,
+    "title": "Подарунковий набір для чоловіків Barber Blend Toscana (4820200418056)",
+    "category": "Подарункові набори",
+    "price_min": 919,
+    "price_max": 919,
+    "query": "Подарункові набори для чоловіків",
+    "query_popularity": 1830000,
+    "item_popularity": 392,
+    "score": 7.9,
+    "tags": [
+      "recipients.men",
+      "type.set"
+    ]
+  },
+  {
+    "id": 123,
+    "title": "Подарунковий набір для обличчя Mr.Scrubber Men Skin Recovery Basic care для чоловіків Пінка 150 мл + Тонік 50 мл + Крем 50 г (4820200416717)",
+    "category": "Подарункові набори",
+    "price_min": 625,
+    "price_max": 625,
+    "query": "Подарункові набори для чоловіків",
+    "query_popularity": 1830000,
+    "item_popularity": 384,
+    "score": 7.9,
+    "tags": [
+      "recipients.men",
+      "type.set"
+    ]
+  },
+  {
+    "id": 124,
+    "title": "Італійський подарунковий набір Sapori di Natale із 8 компонентів",
+    "category": "Подарункові набори",
+    "price_min": 1699,
+    "price_max": 1699,
+    "query": "Подарунки для дорослих",
+    "query_popularity": 3790000,
+    "item_popularity": 383,
+    "score": 4.4,
+    "tags": [
+      "type.set"
+    ]
+  },
+  {
+    "id": 125,
+    "title": "Смішний подарунок чоловікові \"Рулетка щастя\": прикольна гра і консервовані шкарпетки для повного щастя",
+    "category": "Чоловікам",
+    "price_min": 590,
+    "price_max": 590,
+    "query": "Прикольні подарунки на День Народження Жінці",
+    "query_popularity": 284000,
+    "item_popularity": 377,
+    "score": 5.1,
+    "tags": [
+      "recipients.men",
+      "occasions.birthday",
+      "type.funny"
+    ]
+  },
+  {
+    "id": 126,
+    "title": "Жіночий подарунковий набір доглядової косметики для дівчини в подарунок Tom Ford",
+    "category": "Подарункові набори",
+    "price_min": 161850,
+    "price_max": 161850,
+    "query": "Пам ятний подарунок на 20 років",
+    "query_popularity": 19700,
+    "item_popularity": 358,
+    "score": 7.9,
+    "tags": [
+      "recipients.women",
+      "occasions.anniversary",
+      "type.set"
+    ]
+  },
+  {
+    "id": 127,
+    "title": "Коньячний келих «Черепаха»",
+    "category": "Чоловікам",
+    "price_min": 380000,
+    "price_max": 380000,
+    "query": "Ексклюзивні подарунки",
+    "query_popularity": 1150000,
+    "item_popularity": 352,
+    "score": 5.1,
+    "tags": [
+      "type.premium"
+    ]
+  },
+  {
+    "id": 128,
+    "title": "Подарунковий набір чарок для горілки «Тризуб».Ексклюзивний набір 55 млл.6 шт. Ручна робота.Вилито в Україні.",
+    "category": "Подарункові набори",
+    "price_min": 360000,
+    "price_max": 360000,
+    "query": "Ексклюзивні подарунки",
+    "query_popularity": 1150000,
+    "item_popularity": 351,
+    "score": 5.1,
+    "tags": [
+      "type.premium",
+      "type.set",
+      "type.patriotic"
+    ]
+  },
+  {
+    "id": 129,
+    "title": "Набір для віскі “ТРИЗУБ” (gold) 6 келихів 340 мл, кришталь, з позолотою, накладки срібло з позолотою",
+    "category": "Подарункові набори",
+    "price_min": 11950,
+    "price_max": 11950,
+    "query": "Елітні подарунки",
+    "query_popularity": 1900000,
+    "item_popularity": 337,
+    "score": 8.6,
+    "tags": [
+      "type.premium",
+      "type.set",
+      "type.patriotic"
+    ]
+  },
+  {
+    "id": 130,
+    "title": "Подарунковий набір Дуже дивні справи Stranger Things Medium (28113)",
+    "category": "Подарункові набори",
+    "price_min": 1300,
+    "price_max": 1300,
+    "query": "Подарунковий набір",
+    "query_popularity": 1330000,
+    "item_popularity": 335,
+    "score": 10,
+    "tags": [
+      "type.set"
+    ]
+  },
+  {
+    "id": 131,
+    "title": "Vivian GrayGemstone Neroli & Amber подарунковий набір зі зволожуючим ефектом",
+    "category": "Подарункові набори",
+    "price_min": 820,
+    "price_max": 820,
+    "query": "Цікаві подарунки для жінок",
+    "query_popularity": 1030000,
+    "item_popularity": 324,
+    "score": 7.9,
+    "tags": [
+      "type.original",
+      "type.set"
+    ]
+  },
+  {
+    "id": 132,
+    "title": "ПОДАРУНКОВИЙ НАБІР З 4-Х ЛЮБИТИ-БІСИТИ ВІЧНО",
+    "category": "Подарункові набори",
+    "price_min": 975,
+    "price_max": 975,
+    "query": "Подарунковий набір",
+    "query_popularity": 1330000,
+    "item_popularity": 283,
+    "score": 7.9,
+    "tags": [
+      "type.set"
+    ]
+  },
+  {
+    "id": 133,
+    "title": "Універсальний їстівний подарунковий бокс Ohmybuket у деревʼяному ящику 24 см — для чоловіка, жінки, хлопця, дівчини, тата, мами, кума, подруги. Ідеальний варіант на день народження, весілля або без приводу",
+    "category": "Подарункові набори",
+    "price_min": 2260,
+    "price_max": 2260,
+    "query": "Оригінальний подарунок для жінки на День народження",
+    "query_popularity": 403000,
+    "item_popularity": 278,
+    "score": 3.7,
+    "tags": [
+      "recipients.men",
+      "recipients.women",
+      "occasions.birthday",
+      "type.original"
+    ]
+  },
+  {
+    "id": 134,
+    "title": "Чоловічий подарунковий набір Mayur Олія для бороди та вусів 30 мл + Дезодорант I'm a legend 50 мл (2200700118076)",
+    "category": "Подарункові набори",
+    "price_min": 263,
+    "price_max": 263,
+    "query": "Подарункові набори для чоловіків",
+    "query_popularity": 1830000,
+    "item_popularity": 275,
+    "score": 7.9,
+    "tags": [
+      "recipients.men",
+      "type.set"
+    ]
+  },
+  {
+    "id": 135,
+    "title": "Подарунковий сургучний набір з печаткою",
+    "category": "Подарункові набори",
+    "price_min": 1191,
+    "price_max": 1191,
+    "query": "Статусні подарунки",
+    "query_popularity": 5180,
+    "item_popularity": 274,
+    "score": 6.5,
+    "tags": [
+      "type.premium",
+      "type.set"
+    ]
+  },
+  {
+    "id": 136,
+    "title": "Оригінальний подарунок шефу №111 на Новий Рік, День народження. Подарунок для керівника жінки. Царство Меду (330027861)",
+    "category": "Жінкам",
+    "price_min": 100,
+    "price_max": 100,
+    "query": "Патріотичні подарунки для іноземців",
+    "query_popularity": 2500,
+    "item_popularity": 273,
+    "score": 2.3,
+    "tags": [
+      "recipients.women",
+      "recipients.colleagues",
+      "recipients.special",
+      "occasions.birthday",
+      "occasions.new_year",
+      "type.original",
+      "type.patriotic"
+    ]
+  },
+  {
+    "id": 137,
+    "title": "Коробочка для зубчиків дитячих. Патріотичний подарунок",
+    "category": "Патріотичні",
+    "price_min": 355,
+    "price_max": 355,
+    "query": "Патріотичні подарунки для детей",
+    "query_popularity": 32700,
+    "item_popularity": 271,
+    "score": 10,
+    "tags": [
+      "type.patriotic"
+    ]
+  },
+  {
+    "id": 138,
+    "title": "Подарунковий набір нарізок хамону Cumbre Real Jamon Serrano 960г, Іспанія",
+    "category": "Подарункові набори",
+    "price_min": 1999,
+    "price_max": 1999,
+    "query": "Подарунки для дорослих",
+    "query_popularity": 3790000,
+    "item_popularity": 259,
+    "score": 4.4,
+    "tags": [
+      "type.set"
+    ]
+  },
+  {
+    "id": 139,
+    "title": "Універсальний їстівний подарунковий бокс Ohmybuket у деревʼяному ящику 22 см — для чоловіка, жінки, хлопця, дівчини, тата, мами, кума, подруги. Ідеальний варіант на день народження (OMB-14-3)",
+    "category": "Подарункові набори",
+    "price_min": 1890,
+    "price_max": 1890,
+    "query": "Оригінальний подарунок для жінки на День народження",
+    "query_popularity": 403000,
+    "item_popularity": 253,
+    "score": 3.7,
+    "tags": [
+      "recipients.men",
+      "recipients.women",
+      "occasions.birthday",
+      "type.original"
+    ]
+  },
+  {
+    "id": 140,
+    "title": "Подарунковий набір Шен Пуерів Око Дракона, 6 квіткових смаків 120 г, Китай",
+    "category": "Подарункові набори",
+    "price_min": 545,
+    "price_max": 545,
+    "query": "Подарунки для дорослих",
+    "query_popularity": 3790000,
+    "item_popularity": 252,
+    "score": 4.4,
+    "tags": [
+      "type.set"
+    ]
+  },
+  {
+    "id": 141,
+    "title": "Vivian GrayGemstone Ylang & Vanilla подарунковий набір зі зволожуючим ефектом",
+    "category": "Подарункові набори",
+    "price_min": 420,
+    "price_max": 420,
+    "query": "Цікаві подарунки для жінок",
+    "query_popularity": 1030000,
+    "item_popularity": 244,
+    "score": 7.9,
+    "tags": [
+      "type.original",
+      "type.set"
+    ]
+  },
+  {
+    "id": 142,
+    "title": "Патріотичні подарунки в українському стилі №134 для іноземців з українською символікою \"ГЕРБ УКРАЇНИ\". Царство Меду (330027793)",
+    "category": "Патріотичні",
+    "price_min": 265,
+    "price_max": 265,
+    "query": "Патріотичні подарунки для іноземців",
+    "query_popularity": 2500,
+    "item_popularity": 241,
+    "score": 2.3,
+    "tags": [
+      "recipients.special",
+      "type.patriotic"
+    ]
+  },
+  {
+    "id": 143,
+    "title": "Набір турботи ORNER х Нова пошта «Обережно, крихке»",
+    "category": "Подарункові набори",
+    "price_min": 3500,
+    "price_max": 3500,
+    "query": "Подарунки для дорослих",
+    "query_popularity": 3790000,
+    "item_popularity": 240,
+    "score": 8.6,
+    "tags": [
+      "type.set"
+    ]
+  },
+  {
+    "id": 144,
+    "title": "Універсальний їстівний подарунковий бокс Ohmybuket у деревʼяному ящику 27 см — для чоловіка, жінки, хлопця, дівчини, тата, мами, кума, подруги. Ідеальний варіант на день народження (OMB-14-2)",
+    "category": "Подарункові набори",
+    "price_min": 2590,
+    "price_max": 2590,
+    "query": "Оригінальний подарунок для жінки на День народження",
+    "query_popularity": 403000,
+    "item_popularity": 238,
+    "score": 3.7,
+    "tags": [
+      "recipients.men",
+      "recipients.women",
+      "occasions.birthday",
+      "type.original"
+    ]
+  },
+  {
+    "id": 145,
+    "title": "Подарунковий набір із 8 компонентів Le Cadeau Pranzo di Natale, Італія",
+    "category": "Подарункові набори",
+    "price_min": 1699,
+    "price_max": 1699,
+    "query": "Подарунки для дорослих",
+    "query_popularity": 3790000,
+    "item_popularity": 233,
+    "score": 4.4,
+    "tags": [
+      "type.set"
+    ]
+  },
+  {
+    "id": 146,
+    "title": "Великий плюшевий ведмедик Рафаель 160 см у подарунок дівчині на новий рік народження 14 лютого М'який ведмідь",
+    "category": "Жінкам",
+    "price_min": 1543,
+    "price_max": 1543,
+    "query": "Що подарувати на 30 років жінці",
+    "query_popularity": 916000,
+    "item_popularity": 232,
+    "score": 5.1,
+    "tags": [
+      "recipients.women",
+      "occasions.anniversary",
+      "occasions.new_year",
+      "occasions.holiday"
+    ]
+  },
+  {
+    "id": 147,
+    "title": "Набір стрінг арт Чотирилиста конюшина",
+    "category": "Подарункові набори",
+    "price_min": 524,
+    "price_max": 524,
+    "query": "Цікаві подарунки для жінок",
+    "query_popularity": 1030000,
+    "item_popularity": 223,
+    "score": 6.5,
+    "tags": [
+      "type.original",
+      "type.set"
+    ]
+  },
+  {
+    "id": 148,
+    "title": "Чоловічий подарунковий набір з парасолькою та термосом з датчиком температури",
+    "category": "Подарункові набори",
+    "price_min": 2415,
+    "price_max": 2415,
+    "query": "Оригінальні подарунки для чоловіків",
+    "query_popularity": 598000,
+    "item_popularity": 220,
+    "score": 6.5,
+    "tags": [
+      "recipients.men",
+      "type.original",
+      "type.set"
+    ]
+  },
+  {
+    "id": 149,
+    "title": "Подарунковий набір сомельє (вакуумний штопор для вина, пробка, лійка і ножик)",
+    "category": "Подарункові набори",
+    "price_min": 683,
+    "price_max": 683,
+    "query": "Подарунок на 30 років хлопцю",
+    "query_popularity": 41700,
+    "item_popularity": 200,
+    "score": 7.9,
+    "tags": [
+      "recipients.men",
+      "occasions.anniversary",
+      "type.set"
+    ]
+  },
+  {
+    "id": 150,
+    "title": "Склянка для віскі \"Армійська\" – ексклюзивний подарунок для ЗСУ, ручна робота з латуні.",
+    "category": "Військовим",
+    "price_min": 195000,
+    "price_max": 195000,
+    "query": "Ексклюзивні подарунки",
+    "query_popularity": 1150000,
+    "item_popularity": 196,
+    "score": 5.1,
+    "tags": [
+      "recipients.military",
+      "type.premium"
+    ]
+  },
+  {
+    "id": 151,
+    "title": "Патріотичний подарунок 10077",
+    "category": "Патріотичні",
+    "price_min": 799,
+    "price_max": 799,
+    "query": "Патріотичні подарунки для жінок",
+    "query_popularity": 59300,
+    "item_popularity": 171,
+    "score": 9.3,
+    "tags": [
+      "type.patriotic"
+    ]
+  },
+  {
+    "id": 152,
+    "title": "Великий плюшевий ведмедик у подарунок 180 см жіночі подарунки до 8 березня подарує дівчині на день народження.",
+    "category": "Жінкам",
+    "price_min": 1829,
+    "price_max": 1829,
+    "query": "Подарунки на день народження для дівчат",
+    "query_popularity": 662000,
+    "item_popularity": 170,
+    "score": 10,
+    "tags": [
+      "recipients.women",
+      "occasions.birthday"
+    ]
+  },
+  {
+    "id": 153,
+    "title": "Шоколадний набір \"Веселі піструни\"",
+    "category": "Подарункові набори",
+    "price_min": 198,
+    "price_max": 198,
+    "query": "Подарунки для дорослих",
+    "query_popularity": 3790000,
+    "item_popularity": 159,
+    "score": 10,
+    "tags": [
+      "type.set"
+    ]
+  },
+  {
+    "id": 154,
+    "title": "ПОДАРУНКОВИЙ НАБІР З 3-Х БАРВИСТЕ НАТХНЕННЯ",
+    "category": "Подарункові набори",
+    "price_min": 1200,
+    "price_max": 1200,
+    "query": "Подарунковий набір",
+    "query_popularity": 1330000,
+    "item_popularity": 159,
+    "score": 7.9,
+    "tags": [
+      "type.set"
+    ]
+  },
+  {
+    "id": 155,
+    "title": "Подарунковий набір для чоловіків Barbers Sandalwood & Grapefruit Гель для душу Sacramento 500 мл + Заспокійливий лосьйон після гоління London 100 мл + Шкарпетки чоловічі Bring me (4823109407923)",
+    "category": "Подарункові набори",
+    "price_min": 878,
+    "price_max": 878,
+    "query": "Подарункові набори для чоловіків",
+    "query_popularity": 1830000,
+    "item_popularity": 151,
+    "score": 7.9,
+    "tags": [
+      "recipients.men",
+      "type.set"
+    ]
+  },
+  {
+    "id": 156,
+    "title": "ПОДАРУНКОВИЙ НАБІР З 3-Х ПЛАНУЙ І ЛЕТИ",
+    "category": "Подарункові набори",
+    "price_min": 1440,
+    "price_max": 1440,
+    "query": "Подарунковий набір",
+    "query_popularity": 1330000,
+    "item_popularity": 148,
+    "score": 7.9,
+    "tags": [
+      "type.set"
+    ]
+  },
+  {
+    "id": 157,
+    "title": "Шоколадний набір \"Веселі поцьки\"",
+    "category": "Подарункові набори",
+    "price_min": 198,
+    "price_max": 198,
+    "query": "Подарунки для дорослих",
+    "query_popularity": 3790000,
+    "item_popularity": 142,
+    "score": 10,
+    "tags": [
+      "type.set"
+    ]
+  },
+  {
+    "id": 158,
+    "title": "Українські подарунки іноземцям №145 патріотичні подарунки з українською символікою або в українському стилі. Царство Меду (330027785)",
+    "category": "Патріотичні",
+    "price_min": 793,
+    "price_max": 793,
+    "query": "Патріотичні подарунки для іноземців",
+    "query_popularity": 2500,
+    "item_popularity": 107,
+    "score": 2.3,
+    "tags": [
+      "recipients.special",
+      "type.patriotic"
+    ]
+  },
+  {
+    "id": 159,
+    "title": "Набір листівок «Лови вітаннячка» 10 шт",
+    "category": "Подарункові набори",
+    "price_min": 249,
+    "price_max": 249,
+    "query": "Подарунки для дорослих",
+    "query_popularity": 3790000,
+    "item_popularity": 74,
+    "score": 8.6,
+    "tags": [
+      "type.set"
+    ]
+  },
+  {
+    "id": 160,
+    "title": "ПОДАРУНКОВИЙ НАБІР КІНОРІК З ЛОГОТИПОМ",
+    "category": "Подарункові набори",
+    "price_min": 1021,
+    "price_max": 1021,
+    "query": "Корпоративні подарунки",
+    "query_popularity": 990000,
+    "item_popularity": 73,
+    "score": 7.2,
+    "tags": [
+      "recipients.colleagues",
+      "type.set"
+    ]
+  },
+  {
+    "id": 161,
+    "title": "Вічний календар «Я люблю Україну» (155×142×60 мм) з темним кантом розписано вручну",
+    "category": "Патріотичні",
+    "price_min": 410,
+    "price_max": 410,
+    "query": "Патріотичні подарунки",
+    "query_popularity": 730000,
+    "item_popularity": 70,
+    "score": 3.7,
+    "tags": [
+      "type.patriotic"
+    ]
+  },
+  {
+    "id": 162,
+    "title": "Вічний календар «Квітуча Україна» (155×142×60 мм), з темним кантом розписано вручну",
+    "category": "Патріотичні",
+    "price_min": 410,
+    "price_max": 410,
+    "query": "Патріотичні подарунки",
+    "query_popularity": 730000,
+    "item_popularity": 59,
+    "score": 3.7,
+    "tags": [
+      "type.patriotic"
+    ]
+  },
+  {
+    "id": 163,
+    "title": "Набір листівок ORNER x Maliunok «Знак уваги для тебе» 10 шт",
+    "category": "Подарункові набори",
+    "price_min": 249,
+    "price_max": 249,
+    "query": "Подарунки для дорослих",
+    "query_popularity": 3790000,
+    "item_popularity": 58,
+    "score": 8.6,
+    "tags": [
+      "type.set"
+    ]
+  },
+  {
+    "id": 164,
+    "title": "Ексклюзивний коньячний келих «Орел» 380 мл",
+    "category": "Чоловікам",
+    "price_min": 380000,
+    "price_max": 380000,
+    "query": "Ексклюзивні подарунки",
+    "query_popularity": 1150000,
+    "item_popularity": 58,
+    "score": 5.1,
+    "tags": [
+      "type.premium"
+    ]
+  },
+  {
+    "id": 165,
+    "title": "Ексклюзивний коньячний келих «Полювання на вепра»",
+    "category": "Чоловікам",
+    "price_min": 380000,
+    "price_max": 380000,
+    "query": "Ексклюзивні подарунки",
+    "query_popularity": 1150000,
+    "item_popularity": 58,
+    "score": 5.1,
+    "tags": [
+      "type.premium"
+    ]
+  },
+  {
+    "id": 166,
+    "title": "Колаж \"Гривневі купюри незалежної України з 90-х по сьогодні\" (42 банкнот, з яких 6 ювілейних до 30-річчя Незалежності України, одна – до 160-річчя І. Франка та одна – до 300-річчя Г. Сковороди, а також купюра 2023 р.)",
+    "category": "Патріотичні",
+    "price_min": 98500,
+    "price_max": 98500,
+    "query": "Елітні подарунки для жінок",
+    "query_popularity": 47700,
+    "item_popularity": 42,
+    "score": 9.3,
+    "tags": [
+      "type.premium"
+    ]
+  },
+  {
+    "id": 167,
+    "title": "EK М яка іграшка БАВОВНЯТКО-1 патріотична іграшка Original Design для дітей від 3 років талісман ЗСУ HFX17_E",
+    "category": "Військовим",
+    "price_min": 819,
+    "price_max": 819,
+    "query": "Патріотичні подарунки для детей",
+    "query_popularity": 32700,
+    "item_popularity": 10,
+    "score": 10,
+    "tags": [
+      "recipients.children",
+      "type.patriotic"
+    ]
+  },
+  {
+    "id": 168,
+    "title": "Подарунковий набір із ковбасами Ohmybuket для тата, чоловіка, брата, колеги, начальника, на подарунок, день народження, річницю весілля, друга діаметр 22 см (OMB-36-3)",
+    "category": "Подарункові набори",
+    "price_min": 2190,
+    "price_max": 2190,
+    "query": "Оригінальний подарунок для жінки на День народження",
+    "query_popularity": 403000,
+    "item_popularity": 10,
+    "score": 3.7,
+    "tags": [
+      "recipients.men",
+      "recipients.women",
+      "recipients.colleagues",
+      "occasions.birthday",
+      "occasions.memory",
+      "type.original",
+      "type.set"
+    ]
+  },
+  {
+    "id": 169,
+    "title": "Універсальний їстівний подарунковий деревʼяний бокс Ohmybuket 24 см — для жінки, хлопця, дівчини, тата, мами, куми, подруги. Ідеальний варіант на день народження, весілля або без приводу (OMB-30)",
+    "category": "Подарункові набори",
+    "price_min": 2290,
+    "price_max": 2290,
+    "query": "Оригінальний подарунок для жінки на День народження",
+    "query_popularity": 403000,
+    "item_popularity": 10,
+    "score": 3.7,
+    "tags": [
+      "recipients.men",
+      "recipients.women",
+      "occasions.birthday",
+      "type.original"
+    ]
+  },
+  {
+    "id": 170,
+    "title": "Подарунковий набір із ковбасами Omybuket для тата, чоловіка, брата, колеги, начальника, на подарунок, день народження, річницю весілля, друга діаметр 24 см (OMB-36-1)",
+    "category": "Подарункові набори",
+    "price_min": 2660,
+    "price_max": 2660,
+    "query": "Оригінальний подарунок для жінки на День народження",
+    "query_popularity": 403000,
+    "item_popularity": 10,
+    "score": 3.7,
+    "tags": [
+      "recipients.men",
+      "recipients.women",
+      "recipients.colleagues",
+      "occasions.birthday",
+      "occasions.memory",
+      "type.original",
+      "type.set"
+    ]
+  },
+  {
+    "id": 171,
+    "title": "Український подарунок для іноземця №106 Патріотичний подарунок в українському стилі \"Слава Україні, Героям слава\" Царство Меду (330027772)",
+    "category": "Патріотичні",
+    "price_min": 793,
+    "price_max": 793,
+    "query": "Патріотичні подарунки для іноземців",
+    "query_popularity": 2500,
+    "item_popularity": 10,
+    "score": 2.3,
+    "tags": [
+      "recipients.special",
+      "type.patriotic"
+    ]
+  },
+  {
+    "id": 172,
+    "title": "Подарунок з українською символікою №140 український подарунок для іноземця в патріотичному стилі. Царство Меду (330027762)",
+    "category": "Патріотичні",
+    "price_min": 719,
+    "price_max": 719,
+    "query": "Патріотичні подарунки для іноземців",
+    "query_popularity": 2500,
+    "item_popularity": 10,
+    "score": 2.3,
+    "tags": [
+      "recipients.special",
+      "type.patriotic"
+    ]
+  },
+  {
+    "id": 173,
+    "title": "Патріотичні подарунки для жінок №144 з українською символікою, та українському стилі, для іноземців. Царство Меду (330027755)",
+    "category": "Патріотичні",
+    "price_min": 817,
+    "price_max": 817,
+    "query": "Патріотичні подарунки для іноземців",
+    "query_popularity": 2500,
+    "item_popularity": 10,
+    "score": 2.3,
+    "tags": [
+      "recipients.special",
+      "type.patriotic"
+    ]
+  },
+  {
+    "id": 174,
+    "title": "Коньячний келих \"Тигр\" – вишуканий подарунок для чоловіків і жінок, символ сили та елегантності",
+    "category": "Чоловікам",
+    "price_min": 395000,
+    "price_max": 395000,
+    "query": "Ексклюзивні подарунки",
+    "query_popularity": 1150000,
+    "item_popularity": 9,
+    "score": 5.1,
+    "tags": [
+      "recipients.men",
+      "type.premium"
+    ]
+  },
+  {
+    "id": 175,
+    "title": "Подарунок в українському стилі №143 патріотичні подарунки з українською символікою, для іноземців. Царство Меду (330027842)",
+    "category": "Патріотичні",
+    "price_min": 793,
+    "price_max": 793,
+    "query": "Патріотичні подарунки для іноземців",
+    "query_popularity": 2500,
+    "item_popularity": 9,
+    "score": 2.3,
+    "tags": [
+      "recipients.special",
+      "type.patriotic"
+    ]
+  },
+  {
+    "id": 176,
+    "title": "Подарунок на 8 березня дружині №47 коханій дівчині, сестрі, мамі. Царство Меду (330027644)",
+    "category": "Жінкам",
+    "price_min": 422,
+    "price_max": 422,
+    "query": "Патріотичні подарунки для іноземців",
+    "query_popularity": 2500,
+    "item_popularity": 9,
+    "score": 2.3,
+    "tags": [
+      "recipients.women",
+      "recipients.special",
+      "type.patriotic"
+    ]
+  },
+  {
+    "id": 177,
+    "title": "Патріотичні подарунки чоловікам №96, для жінок, військовому, на День Народження. Царство Меду (330027801)",
+    "category": "Військовим",
+    "price_min": 854,
+    "price_max": 854,
+    "query": "Патріотичні подарунки для іноземців",
+    "query_popularity": 2500,
+    "item_popularity": 8,
+    "score": 2.3,
+    "tags": [
+      "recipients.men",
+      "recipients.military",
+      "recipients.special",
+      "occasions.birthday",
+      "type.patriotic"
+    ]
+  },
+  {
+    "id": 178,
+    "title": "Подарунковий набір із ковбасами Ohmybuket для тата, чоловіка, брата, колеги, начальника, на подарунок, день народження, річницю весілля, друга діаметр 24 см (OMB-36)",
+    "category": "Подарункові набори",
+    "price_min": 2660,
+    "price_max": 2660,
+    "query": "Оригінальний подарунок для жінки на День народження",
+    "query_popularity": 403000,
+    "item_popularity": 7,
+    "score": 3.7,
+    "tags": [
+      "recipients.men",
+      "recipients.women",
+      "recipients.colleagues",
+      "occasions.birthday",
+      "occasions.memory",
+      "type.original",
+      "type.set"
+    ]
+  },
+  {
+    "id": 179,
+    "title": "Подарунковий набір-бокс із ковбасами Ohmybuket для тата, чоловіка, брата, колеги, начальника, на подарунок, день народження, річницю весілля діаметр 27 см (OMB-37)",
+    "category": "Подарункові набори",
+    "price_min": 2860,
+    "price_max": 2860,
+    "query": "Оригінальний подарунок для жінки на День народження",
+    "query_popularity": 403000,
+    "item_popularity": 7,
+    "score": 3.7,
+    "tags": [
+      "recipients.men",
+      "recipients.women",
+      "recipients.colleagues",
+      "occasions.birthday",
+      "occasions.memory",
+      "type.original",
+      "type.set"
+    ]
+  },
+  {
+    "id": 180,
+    "title": "Подарунковий набір із ковбасами Ohmybuket для тата, чоловіка, брата, колеги, начальника, на подарунок, день народження, річницю весілля, друга діаметр 27 см (OMB-36-2)",
+    "category": "Подарункові набори",
+    "price_min": 2860,
+    "price_max": 2860,
+    "query": "Оригінальний подарунок для жінки на День народження",
+    "query_popularity": 403000,
+    "item_popularity": 6,
+    "score": 3.7,
+    "tags": [
+      "recipients.men",
+      "recipients.women",
+      "recipients.colleagues",
+      "occasions.birthday",
+      "occasions.memory",
+      "type.original",
+      "type.set"
+    ]
+  },
+  {
+    "id": 181,
+    "title": "Великодній подарунковий набір №121 Царство Меду (330027847)",
+    "category": "Подарункові набори",
+    "price_min": 793,
+    "price_max": 793,
+    "query": "Патріотичні подарунки для іноземців",
+    "query_popularity": 2500,
+    "item_popularity": 6,
+    "score": 2.3,
+    "tags": [
+      "recipients.special",
+      "type.set",
+      "type.patriotic"
+    ]
+  },
+  {
+    "id": 182,
+    "title": "Букет для чоловіка подарунок на день народження свято Ohmybuket діаметр 25 см (OMB-104-1)",
+    "category": "Чоловікам",
+    "price_min": 2990,
+    "price_max": 2990,
+    "query": "Оригінальний подарунок для жінки на День народження",
+    "query_popularity": 403000,
+    "item_popularity": 3,
+    "score": 3.7,
+    "tags": [
+      "recipients.men",
+      "recipients.women",
+      "occasions.birthday",
+      "type.original"
+    ]
   }
 ]
